@@ -59,7 +59,7 @@
     <Import Include="Microsoft.VisualBasic" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\packages.config" />
+    <None Include="packages.config" />
     <None Include="Reading.pptx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

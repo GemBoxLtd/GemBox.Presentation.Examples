@@ -59,7 +59,7 @@
     <Import Include="Microsoft.VisualBasic" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\packages.config" />
+    <None Include="packages.config" />
     <None Include="Resources\Almonte Snow.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

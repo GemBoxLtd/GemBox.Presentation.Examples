@@ -106,7 +106,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="..\..\packages.config" />
+    <None Include="packages.config" />
     <None Include="Template.pptx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
