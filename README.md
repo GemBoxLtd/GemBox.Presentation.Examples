@@ -13,8 +13,8 @@ GemBox.Presentation is a .NET component which enables developers to read, write,
   </a>
 </p>
 
-This repository contains the source code of GemBox.Presentation example projects. The demos or live examples are available online on: 
-[GemBox.Presentation - C# / VB.NET PowerPoint - Examples](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-library/101).
+This repository contains the source code of GemBox.Presentation example projects. The demos or live examples are available online on:  
+[GemBox.Presentation - C# / VB.NET PowerPoint - Examples](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-library/101)
 
 ## Resources
 + **[Overview](https://www.gemboxsoftware.com/presentation/overview)**
