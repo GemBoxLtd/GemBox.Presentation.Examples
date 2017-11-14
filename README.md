@@ -1,6 +1,6 @@
 # GemBox.Presentation Examples
 
-![GemBox.Presentation](https://www.gemboxsoftware.com/presentation/examples/content/Presentation.png)
+![GemBox.Presentation](https://www.gemboxsoftware.com/images/gbp-256x256.png)
 
 GemBox.Presentation is a .NET component which enables developers to read, write, convert and print presentation files (PPTX, PPT, PDF, XPS and image formats) from .NET applications in a simple and efficient way.
 
@@ -12,7 +12,7 @@ This repository contains the source code of GemBox.Presentation example projects
 [GemBox.Presentation - C# / VB.NET PowerPoint - Examples](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-library/101)
 
 ## Resources
-+ **[Overview](https://www.gemboxsoftware.com/presentation/overview)**
++ **[Overview](https://www.gemboxsoftware.com/presentation)**
 + **[Documentation](https://www.gemboxsoftware.com/presentation/help/html/Introduction.htm)**
 + **[Support](https://www.gemboxsoftware.com/presentation/support)**
 + **[Blog](https://www.gemboxsoftware.com/gembox-presentation)**
