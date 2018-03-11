@@ -76,13 +76,13 @@ namespace MediumTrustSampleCs {
         protected global::System.Web.UI.WebControls.LinkButton addRowLinkButton;
         
         /// <summary>
-        /// outputFormatRadioButton control.
+        /// outputFormatDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList outputFormatRadioButton;
+        protected global::System.Web.UI.WebControls.DropDownList outputFormatDropDownList;
         
         /// <summary>
         /// generateButton control.

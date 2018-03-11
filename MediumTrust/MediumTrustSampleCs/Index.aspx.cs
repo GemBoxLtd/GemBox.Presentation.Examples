@@ -93,7 +93,7 @@ namespace MediumTrustSampleCs
             UpdatePresentation(presentation, this.titleTextBox.Text, this.summaryHeadingTextBox.Text, this.summaryBulletsTextBox.Text, this.highlightsHeadingTextBox.Text, (DataTable)Session["highlightsDataTable"]);
 
             // Stream the presentation to the browser.
-            string fileName = "Presentation." + this.outputFormatRadioButton.SelectedValue;
+            string fileName = "Presentation." + this.outputFormatDropDownList.SelectedValue;
             presentation.Save(this.Response, fileName);
         }
 

@@ -77,14 +77,14 @@ Partial Public Class Index
     Protected WithEvents addRowLinkButton As Global.System.Web.UI.WebControls.LinkButton
     
     '''<summary>
-    '''outputFormatRadioButton control.
+    '''outputFormatDropDownList control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents outputFormatRadioButton As Global.System.Web.UI.WebControls.RadioButtonList
-    
+    Protected WithEvents outputFormatDropDownList As Global.System.Web.UI.WebControls.DropDownList
+	
     '''<summary>
     '''generateButton control.
     '''</summary>

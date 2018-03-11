@@ -83,10 +83,11 @@ Campaigns targeting new markets.</asp:TextBox>
         <br />
         <fieldset>
             <legend>Output format:</legend>
-            <asp:RadioButtonList ID="outputFormatRadioButton" runat="server">
+            <asp:DropDownList ID="outputFormatDropDownList" runat="server">
                 <asp:ListItem Value="pptx" Selected="True">PPTX</asp:ListItem>
-            </asp:RadioButtonList>
-            <br />
+                <asp:ListItem Value="pdf">PDF</asp:ListItem>
+            </asp:DropDownList>
+            <br /><br />
             <asp:Button ID="generateButton" runat="server" Text="Generate" OnClick="generateButton_Click" />
         </fieldset>
     </form>

@@ -93,7 +93,7 @@ Partial Public Class Index
         UpdatePresentation(presentation, Me.titleTextBox.Text, Me.summaryHeadingTextBox.Text, Me.summaryBulletsTextBox.Text, Me.highlightsHeadingTextBox.Text, DirectCast(Session("highlightsDataTable"), DataTable))
 
         ' Stream the presentation to the browser.
-        Dim fileName As String = "Presentation." + Me.outputFormatRadioButton.SelectedValue
+        Dim fileName As String = "Presentation." + Me.outputFormatDropDownList.SelectedValue
         presentation.Save(Me.Response, fileName)
     End Sub
 
