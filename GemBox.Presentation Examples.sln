@@ -350,6 +350,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediumTrustSampleCs", "Medi
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MediumTrustSampleVb", "MediumTrust\MediumTrustSampleVb\MediumTrustSampleVb.vbproj", "{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PPTX Modify Protection", "PPTX Modify Protection", "{D9C5D931-82B8-4D67-B6AD-4B08F2C1FBF3}"
+	ProjectSection(SolutionItems) = preProject
+		PPTX Modify Protection\README.md = PPTX Modify Protection\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTXModifyProtectionCs", "PPTX Modify Protection\PPTXModifyProtectionCs\PPTXModifyProtectionCs.csproj", "{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PPTXModifyProtectionVb", "PPTX Modify Protection\PPTXModifyProtectionVb\PPTXModifyProtectionVb.vbproj", "{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -664,6 +673,14 @@ Global
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -745,5 +762,10 @@ Global
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103} = {ED68872F-6C04-4976-AB07-887BFBE59ADF}
 		{F9E12BF5-1607-4514-A60E-9FD7FF8080B4} = {31284CE0-AE3F-4D94-8AFE-9C39C2BF8C87}
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE} = {31284CE0-AE3F-4D94-8AFE-9C39C2BF8C87}
+		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A} = {D9C5D931-82B8-4D67-B6AD-4B08F2C1FBF3}
+		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636} = {D9C5D931-82B8-4D67-B6AD-4B08F2C1FBF3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {374BFC4A-A565-441A-A3E5-A0B79E9D4B7A}
 	EndGlobalSection
 EndGlobal
