@@ -2,35 +2,29 @@
 using System.Windows.Controls;
 using GemBox.Presentation;
 
-namespace ConvertToImageSourceCs
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            SetImageSource(this.ImageControl);
-        }
+        SetImageSource(this.ImageControl);
+    }
 
-        private static void SetImageSource(Image image)
-        {
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+    private static void SetImageSource(Image image)
+    {
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-            PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
-            Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
-            GemBox.Presentation.TextBox textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 8, 4, LengthUnit.Centimeter);
-            textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkGray));
+        var textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 8, 4, LengthUnit.Centimeter);
+        textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkGray));
 
-            TextRun run = textBox.AddParagraph().AddRun("Hello World!");
-            run.Format.Fill.SetSolid(Color.FromName(ColorName.Black));
+        var run = textBox.AddParagraph().AddRun("Hello World!");
+        run.Format.Fill.SetSolid(Color.FromName(ColorName.Black));
 
-            image.Source = presentation.ConvertToImageSource(SaveOptions.Image);
-        }
+        image.Source = presentation.ConvertToImageSource(SaveOptions.Image);
     }
 }

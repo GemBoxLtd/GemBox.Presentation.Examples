@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GemBox.Presentation, Version=21.3.35.1038, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\GemBox.Presentation.21.3.35.1038\lib\net35\GemBox.Presentation.dll</HintPath>
+    <Reference Include="GemBox.Presentation, Version=21.3.35.1049, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GemBox.Presentation.21.3.35.1049\lib\net35\GemBox.Presentation.dll</HintPath>
     </Reference>
     <Reference Include="ReachFramework" />
     <Reference Include="System" />

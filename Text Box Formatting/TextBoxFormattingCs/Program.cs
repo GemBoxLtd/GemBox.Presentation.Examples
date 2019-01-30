@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,13 +7,13 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create new text box.
-        TextBox textBox = slide.Content.AddTextBox(
+        var textBox = slide.Content.AddTextBox(
             ShapeGeometryType.RoundedRectangle, 2, 2, 10, 10, LengthUnit.Centimeter);
 
         // Set shape format.
@@ -26,7 +25,7 @@ class Program
         textBox.AddParagraph().AddRun("Shows some of the text box formatting options available in GemBox.Presentation component.");
 
         // Get text box format.
-        TextBoxFormat format = textBox.Format;
+        var format = textBox.Format;
 
         // Set vertical alignment of the text.
         format.VerticalAlignment = VerticalAlignment.Middle;

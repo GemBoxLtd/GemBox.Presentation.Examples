@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,13 +7,13 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new presentation slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Adds a new comment with a new author in the top-left corner of the slide.
-        Comment comment = slide.Comments.Add("GBP", "GemBox.Presentation", "Shows how to use comments with GemBox.Presentation component.");
+        var comment = slide.Comments.Add("GBP", "GemBox.Presentation", "Shows how to use comments with GemBox.Presentation component.");
 
         // Change comment position.
         comment.Left = Length.From(50, LengthUnit.Centimeter);

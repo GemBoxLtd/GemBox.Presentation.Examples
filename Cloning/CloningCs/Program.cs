@@ -1,5 +1,4 @@
 using System;
-using System.IO;
 using GemBox.Presentation;
 
 class Program
@@ -9,11 +8,9 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("CloneDestination.pptx");
+        var presentation = PresentationDocument.Load("CloneDestination.pptx");
 
-        string pathToFileDirectory = "Resources";
-
-        var sourcePresentation = PresentationDocument.Load(Path.Combine(pathToFileDirectory, "CloneSource.pptx"));
+        var sourcePresentation = PresentationDocument.Load("CloneSource.pptx");
 
         // Use context so that references between 
         // shapes and slides are maintained between all cloning operations.

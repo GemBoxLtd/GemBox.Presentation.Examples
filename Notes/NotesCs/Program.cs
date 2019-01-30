@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using GemBox.Presentation;
 
@@ -9,26 +8,26 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Add a blank slide to the presentation.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Blank);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Blank);
 
         // Add a text box with some content to the slide.
-        TextBox text = slide.Content.AddTextBox(3, 2, 22, 2, LengthUnit.Centimeter);
+        var text = slide.Content.AddTextBox(3, 2, 22, 2, LengthUnit.Centimeter);
         text.AddParagraph().AddRun("This is my presentation with notes");
 
         // Add notes to the slide.
-        NotesSlide notes = slide.AddNotes();
+        var notes = slide.AddNotes();
 
         // Using LINQ, find shape that contains notes text.
-        TextBox notesText = notes.Content.Drawings.OfType<Shape>().
+        var notesText = notes.Content.Drawings.OfType<Shape>().
             Single(sp => sp.Placeholder.PlaceholderType == PlaceholderType.Text).Text;
 
         // Start adding notes text and formatting.
         notesText.AddParagraph().AddRun("These are my notes:");
 
-        TextParagraph noteParagraph = notesText.AddParagraph();
+        var noteParagraph = notesText.AddParagraph();
         // Paragraph will be numbered.
         noteParagraph.Format.List.NumberType = ListNumberType.DecimalPeriod;
         // Move paragraph content a little bit from its number.

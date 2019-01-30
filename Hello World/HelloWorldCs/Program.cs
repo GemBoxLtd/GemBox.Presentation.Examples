@@ -1,5 +1,4 @@
-﻿using System;
-using GemBox.Presentation;
+﻿using GemBox.Presentation;
 
 class Program
 {
@@ -7,14 +6,14 @@ class Program
     {
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-        
-        PresentationDocument presentation = new PresentationDocument();
 
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var presentation = new PresentationDocument();
 
-        TextBox textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 5, 4, LengthUnit.Centimeter);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
-        TextParagraph paragraph = textBox.AddParagraph();
+        var textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 5, 4, LengthUnit.Centimeter);
+
+        var paragraph = textBox.AddParagraph();
 
         paragraph.AddRun("Hello World!");
 

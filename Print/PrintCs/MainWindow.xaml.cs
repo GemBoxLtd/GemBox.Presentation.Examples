@@ -4,79 +4,73 @@ using System.Windows.Xps.Packaging;
 using GemBox.Presentation;
 using Microsoft.Win32;
 
-namespace PrintCs
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    private PresentationDocument presentation;
+
+    public MainWindow()
     {
-        private PresentationDocument presentation;
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        public MainWindow()
+        InitializeComponent();
+
+        this.EnableControls();
+    }
+
+    private void LoadFileBtn_Click(object sender, RoutedEventArgs e)
+    {
+        OpenFileDialog fileDialog = new OpenFileDialog();
+        fileDialog.Filter = "PPTX files (*.pptx, *.pptm, *.potx, *.potm)|*.pptx;*.pptm;*.potx;*.potm";
+
+        if (fileDialog.ShowDialog() == true)
         {
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+            this.presentation = PresentationDocument.Load(fileDialog.FileName);
 
-            InitializeComponent();
-
+            this.ShowPrintPreview();
             this.EnableControls();
         }
+    }
 
-        private void LoadFileBtn_Click(object sender, RoutedEventArgs e)
+    private void SimplePrint_Click(object sender, RoutedEventArgs e)
+    {
+        // Print to default printer using default options
+        this.presentation.Print();
+    }
+
+    private void AdvancedPrint_Click(object sender, RoutedEventArgs e)
+    {
+        // We can use PrintDialog for defining print options
+        PrintDialog printDialog = new PrintDialog();
+        printDialog.UserPageRangeEnabled = true;
+
+        if (printDialog.ShowDialog() == true)
         {
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = "PPTX files (*.pptx, *.pptm, *.potx, *.potm)|*.pptx;*.pptm;*.potx;*.potm";
+            PrintOptions printOptions = new PrintOptions(printDialog.PrintTicket.GetXmlStream());
 
-            if (fileDialog.ShowDialog() == true)
-            {
-                this.presentation = PresentationDocument.Load(fileDialog.FileName);
+            printOptions.FromSlide = printDialog.PageRange.PageFrom - 1;
+            printOptions.ToSlide = printDialog.PageRange.PageTo == 0 ? int.MaxValue : printDialog.PageRange.PageTo - 1;
 
-                this.ShowPrintPreview();
-                this.EnableControls();
-            }
+            this.presentation.Print(printDialog.PrintQueue.FullName, printOptions);
         }
+    }
 
-        private void SimplePrint_Click(object sender, RoutedEventArgs e)
-        {
-            // Print to default printer using default options
-            this.presentation.Print();
-        }
+    // We can use DocumentViewer for print preview (but we don't need).
+    private void ShowPrintPreview()
+    {
+        // XpsDocument needs to stay referenced so that DocumentViewer can access additional required resources.
+        // Otherwise, GC will collect/dispose XpsDocument and DocumentViewer will not work.
+        XpsDocument xpsDocument = this.presentation.ConvertToXpsDocument(SaveOptions.Xps);
+        this.DocViewer.Tag = xpsDocument;
 
-        private void AdvancedPrint_Click(object sender, RoutedEventArgs e)
-        {
-            // We can use PrintDialog for defining print options
-            PrintDialog printDialog = new PrintDialog();
-            printDialog.UserPageRangeEnabled = true;
+        this.DocViewer.Document = xpsDocument.GetFixedDocumentSequence();
+    }
 
-            if (printDialog.ShowDialog() == true)
-            {
-                PrintOptions printOptions = new PrintOptions(printDialog.PrintTicket.GetXmlStream());
+    private void EnableControls()
+    {
+        var isEnabled = this.presentation != null;
 
-                printOptions.FromSlide = printDialog.PageRange.PageFrom - 1;
-                printOptions.ToSlide = printDialog.PageRange.PageTo == 0 ? int.MaxValue : printDialog.PageRange.PageTo - 1;
-
-                this.presentation.Print(printDialog.PrintQueue.FullName, printOptions);
-            }
-        }
-
-        // We can use DocumentViewer for print preview (but we don't need).
-        private void ShowPrintPreview()
-        {
-            // XpsDocument needs to stay referenced so that DocumentViewer can access additional required resources.
-            // Otherwise, GC will collect/dispose XpsDocument and DocumentViewer will not work.
-            XpsDocument xpsDocument = this.presentation.ConvertToXpsDocument(SaveOptions.Xps);
-            this.DocViewer.Tag = xpsDocument;
-
-            this.DocViewer.Document = xpsDocument.GetFixedDocumentSequence();
-        }
-
-        private void EnableControls()
-        {
-            bool isEnabled = this.presentation != null;
-
-            this.DocViewer.IsEnabled = isEnabled;
-            this.SimplePrintFileBtn.IsEnabled = isEnabled;
-            this.AdvancedPrintFileBtn.IsEnabled = isEnabled;
-        }
+        this.DocViewer.IsEnabled = isEnabled;
+        this.SimplePrintFileBtn.IsEnabled = isEnabled;
+        this.AdvancedPrintFileBtn.IsEnabled = isEnabled;
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,20 +7,20 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create new "rounded rectangle" shape.
-        Shape shape = slide.Content.AddShape(
+        var shape = slide.Content.AddShape(
             ShapeGeometryType.RoundedRectangle, 2, 2, 5, 4, LengthUnit.Centimeter);
 
         // Get shape format.
-        ShapeFormat format = shape.Format;
+        var format = shape.Format;
 
         // Get shape fill format.
-        FillFormat fillFormat = format.Fill;
+        var fillFormat = format.Fill;
 
         // Set shape fill format as solid fill.
         fillFormat.SetSolid(Color.FromName(ColorName.DarkBlue));
@@ -44,7 +43,7 @@ class Program
         shape.Format.Fill.SetNone();
 
         // Get shape outline format.
-        LineFormat lineFormat = shape.Format.Outline;
+        var lineFormat = shape.Format.Outline;
 
         // Set shape outline format as single solid red line.
         lineFormat.Fill.SetSolid(Color.FromName(ColorName.Red));
@@ -52,6 +51,6 @@ class Program
         lineFormat.Width = Length.From(0.8, LengthUnit.Centimeter);
         lineFormat.CompoundType = LineCompoundType.Single;
 
-        presentation.Save("Shape Formatting.pdf");
+        presentation.Save("Shape Formatting.pptx");
     }
 }

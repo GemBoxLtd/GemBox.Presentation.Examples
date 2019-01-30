@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,10 +7,10 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new master slide.
-        MasterSlide master = presentation.MasterSlides.AddNew();
+        var master = presentation.MasterSlides.AddNew();
         master.Content.AddPlaceholder(PlaceholderType.Date);
         master.Content.AddPlaceholder(PlaceholderType.SlideNumber);
 
@@ -20,7 +19,7 @@ class Program
         master.HeaderFooter.IsSlideNumberEnabled = true;
 
         // Create new slides; will inherit "DateTime" and "SlideNumber" placeholders from master slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.VerticalTitleAndText);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.VerticalTitleAndText);
         slide = presentation.Slides.AddNew(SlideLayoutType.TwoObjects);
         slide = presentation.Slides.AddNew(SlideLayoutType.TwoObjectsAndText);
 

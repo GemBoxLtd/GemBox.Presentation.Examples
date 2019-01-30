@@ -1,6 +1,6 @@
-using System;
 using System.IO;
 using GemBox.Presentation;
+using GemBox.Presentation.Media;
 
 class Program
 {
@@ -9,24 +9,22 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
-
-        string pathToResources = "Resources";
+        var presentation = new PresentationDocument();
 
         // Create first presentation slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create first shape.
-        Shape shape = slide.Content.AddShape(ShapeGeometryType.Rectangle, 2, 2, 8, 3, LengthUnit.Centimeter);
+        var shape = slide.Content.AddShape(ShapeGeometryType.Rectangle, 2, 2, 8, 3, LengthUnit.Centimeter);
 
         // Set shape outline format.
         shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkGray));
 
         // Create a paragraph.
-        TextParagraph paragraph = shape.Text.AddParagraph();
+        var paragraph = shape.Text.AddParagraph();
 
         // Add and format paragraph plain text.
-        TextRun run = paragraph.AddRun("Powered by ");
+        var run = paragraph.AddRun("Powered by ");
         run.Format.Fill.SetSolid(Color.FromName(ColorName.DarkGray));
 
         // Add and format paragraph hyperlink text.
@@ -49,7 +47,7 @@ class Program
 
         // Set "play sound" action on created shape.
         var action = shape.Action.Click;
-        using (var stream = File.OpenRead(Path.Combine(pathToResources, "Applause.wav")))
+        using (var stream = File.OpenRead("Applause.wav"))
             action.PlaySound(stream, "applause.wav");
 
         action.Set(ActionType.None);

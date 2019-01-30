@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("PrintCs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GemBox Ltd.")]
+[assembly: AssemblyCompany("GemBox d.o.o.")]
 [assembly: AssemblyProduct("PrintCs")]
-[assembly: AssemblyCopyright("Copyright © GemBox Ltd.")]
+[assembly: AssemblyCopyright("Copyright © GemBox d.o.o.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

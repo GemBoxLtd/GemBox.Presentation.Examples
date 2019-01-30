@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using GemBox.Presentation;
 using GemBox.Presentation.Media;
@@ -10,23 +9,21 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
-
-        string pathToResources = "Resources";
+        var presentation = new PresentationDocument();
 
         // Create new presentation slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create and add audio content.
         AudioContent audio = null;
-        using (var stream = File.OpenRead(Path.Combine(pathToResources, "Applause.wav")))
+        using (var stream = File.OpenRead("Applause.wav"))
             audio = slide.Content.AddAudio(AudioContentType.Wav, stream, 2, 2, LengthUnit.Centimeter);
 
         // Set the ending fade durations for the media.
         audio.Fade.End = TimeOffset.From(300, TimeOffsetUnit.Millisecond);
 
         // Get the picture associated with this media.
-        Picture picture = audio.Picture;
+        var picture = audio.Picture;
 
         // Set drawing properties.
         picture.Action.Click.Set(ActionType.PlayMedia);
@@ -36,7 +33,7 @@ class Program
 
         // Create and add video content.
         VideoContent video = null;
-        using (var stream = File.OpenRead(Path.Combine(pathToResources, "Wildlife.wmv")))
+        using (var stream = File.OpenRead("Wildlife.wmv"))
             video = slide.Content.AddVideo("video/x-ms-wmv", stream, 10, 2, 10, 5.6, LengthUnit.Centimeter);
 
         // Set drawing properties.

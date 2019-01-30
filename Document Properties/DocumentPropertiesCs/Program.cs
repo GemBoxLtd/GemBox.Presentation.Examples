@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,20 +7,20 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("Reading.pptx");
+        var presentation = PresentationDocument.Load("Reading.pptx");
 
-        Slide slide = presentation.Slides[0];
+        var slide = presentation.Slides[0];
 
         slide.Content.Drawings.Clear();
 
         // Create "Built-in document properties" text box.
-        TextBox textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 0.5, 0.5, 12, 10, LengthUnit.Centimeter);
+        var textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 0.5, 0.5, 12, 10, LengthUnit.Centimeter);
         textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkBlue));
 
-        TextParagraph paragraph = textBox.AddParagraph();
+        var paragraph = textBox.AddParagraph();
         paragraph.Format.Alignment = HorizontalAlignment.Left;
 
-        TextRun run = paragraph.AddRun("Built-in document properties:");
+        var run = paragraph.AddRun("Built-in document properties:");
         run.Format.Bold = true;
 
         paragraph.AddLineBreak();

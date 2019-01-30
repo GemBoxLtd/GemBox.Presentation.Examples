@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,20 +7,20 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create new text box.
-        TextBox textBox = slide.Content.AddTextBox(
+        var textBox = slide.Content.AddTextBox(
             ShapeGeometryType.RoundedRectangle, 2, 2, 10, 20, LengthUnit.Centimeter);
 
         // Create new paragraph.
-        TextParagraph paragraph = textBox.AddParagraph();
+        var paragraph = textBox.AddParagraph();
 
         // Create new run.
-        TextRun run = paragraph.AddRun("All caps: ");
+        var run = paragraph.AddRun("All caps: ");
         run = paragraph.AddRun("Capital letters");
         run.Format.Caps = CapsType.All;
 

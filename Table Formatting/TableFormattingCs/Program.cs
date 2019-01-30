@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 using GemBox.Presentation.Tables;
 
@@ -9,13 +8,13 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new presentation slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create new table.
-        Table table = slide.Content.AddTable(5, 5, 20, 5, LengthUnit.Centimeter);
+        var table = slide.Content.AddTable(5, 5, 20, 5, LengthUnit.Centimeter);
 
         // Format table with no-style grid.
         table.Format.Style = presentation.TableStyles.GetOrAdd(
@@ -27,9 +26,9 @@ class Program
         table.Columns.AddNew(Length.From(10, LengthUnit.Centimeter));
         table.Columns.AddNew(Length.From(5, LengthUnit.Centimeter));
 
-        TableRow row = table.Rows.AddNew(Length.From(5, LengthUnit.Centimeter));
+        var row = table.Rows.AddNew(Length.From(5, LengthUnit.Centimeter));
 
-        TableCell cell = row.Cells.AddNew();
+        var cell = row.Cells.AddNew();
 
         cell.Format.Fill.SetSolid(Color.FromName(ColorName.Red));
 
@@ -39,7 +38,7 @@ class Program
 
         cell = row.Cells.AddNew();
 
-        LineFormat border = cell.Format.DiagonalDownBorderLine;
+        var border = cell.Format.DiagonalDownBorderLine;
 
         border.Fill.SetSolid(Color.FromName(ColorName.White));
         border.Width = Length.From(5, LengthUnit.Millimeter);

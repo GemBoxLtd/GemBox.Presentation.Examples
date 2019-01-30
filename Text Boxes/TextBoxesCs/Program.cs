@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,32 +7,32 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new presentation slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create first text box.
-        TextBox textBox = slide.Content.AddTextBox(ShapeGeometryType.RoundedRectangle, 2, 2, 8, 8, LengthUnit.Centimeter);
+        var textBox = slide.Content.AddTextBox(ShapeGeometryType.RoundedRectangle, 2, 2, 8, 8, LengthUnit.Centimeter);
 
         // Set shape outline format.
         textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkGray));
 
         // Create first paragraph with single run element.
-        TextRun run = textBox.AddParagraph().AddRun("Shows how to use text boxes with GemBox.Presentation component.");
+        var run = textBox.AddParagraph().AddRun("Shows how to use text boxes with GemBox.Presentation component.");
         run.Format.Bold = true;
 
         // Create empty paragraph.
         textBox.AddParagraph();
 
         // Create (mixed-element) paragraph.
-        TextParagraph paragraph = textBox.AddParagraph();
+        var paragraph = textBox.AddParagraph();
 
         // Create and add a run element.
         run = paragraph.AddRun("Today's date: ");
 
         // Create and add a "DateTime" text field element.
-        TextField field = paragraph.AddField(TextFieldType.DateTime);
+        var field = paragraph.AddField(TextFieldType.DateTime);
 
         // Create empty paragraph.
         textBox.AddParagraph();
@@ -45,7 +44,7 @@ class Program
         run = paragraph.AddRun("This is a ...");
 
         // Create and add a line break element.
-        TextLineBreak lb = paragraph.AddLineBreak();
+        var lb = paragraph.AddLineBreak();
 
         // Create and add a second run element.
         run = paragraph.AddRun("... multi-line paragraph.");

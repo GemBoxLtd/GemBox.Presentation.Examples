@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using GemBox.Presentation;
 
@@ -9,15 +8,12 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("Reading.pptx");
-
-        string pathToResources = "Resources";
+        var presentation = PresentationDocument.Load("Reading.pptx");
 
         var slide = presentation.Slides[0];
 
         Picture signature = null;
-        using (var stream = File.OpenRead(
-            Path.Combine(pathToResources, "GemBoxSignature.png")))
+        using (var stream = File.OpenRead("GemBoxSignature.png"))
             signature = slide.Content.AddPicture(
                 PictureContentType.Png, stream, 25, 15, 4, 1, LengthUnit.Centimeter);
 
@@ -25,8 +21,7 @@ class Program
         {
             DigitalSignature =
             {
-                CertificatePath = Path.Combine(
-                    pathToResources, "GemBoxSampleExplorer.pfx"),
+                CertificatePath = "GemBoxExampleExplorer.pfx",
                 CertificatePassword = "GemBoxPassword",
                 Signature = signature
             }

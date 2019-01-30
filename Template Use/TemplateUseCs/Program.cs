@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using GemBox.Presentation;
 using GemBox.Presentation.Tables;
@@ -10,13 +9,13 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("Template.pptx");
+        var presentation = PresentationDocument.Load("Template.pptx");
 
         // Retrieve first slide.
-        Slide slide = presentation.Slides[0];
+        var slide = presentation.Slides[0];
 
         // Retrieve "Title" placeholder and set shape text.
-        Shape shape = slide.Content.Drawings.OfType<Shape>().Where(item => item.Placeholder?.PlaceholderType == PlaceholderType.CenteredTitle).First();
+        var shape = slide.Content.Drawings.OfType<Shape>().Where(item => item.Placeholder?.PlaceholderType == PlaceholderType.CenteredTitle).First();
         shape.Text.Paragraphs[0].AddRun("ACME Corp - 4th Quarter Financial Results");
 
         // Retrieve second slide.
@@ -47,7 +46,7 @@ class Program
         shape.Text.Paragraphs[0].AddRun("4th Quarter Financial Highlights");
 
         // Retrieve a table.
-        Table table = slide.Content.Drawings.OfType<GraphicFrame>().Where(item => item.Table != null).Select(item => item.Table).First();
+        var table = slide.Content.Drawings.OfType<GraphicFrame>().Where(item => item.Table != null).Select(item => item.Table).First();
 
         // Fill table data.
         table.Rows[1].Cells[1].Text.Paragraphs[0].Elements.OfType<TextRun>().First().Text = "$14.2M";

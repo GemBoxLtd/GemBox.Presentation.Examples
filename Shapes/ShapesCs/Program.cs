@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,10 +7,10 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new slide; will create "custom" layout slide and default master slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         slide.Content.AddShape(ShapeGeometryType.RectangularCallout, 30, 30, 130, 100, LengthUnit.Point).Format.Fill.SetSolid(Color.FromName(ColorName.AliceBlue));
         slide.Content.AddShape(ShapeGeometryType.RoundedRectangularCallout, 170, 30, 130, 100, LengthUnit.Point).Format.Fill.SetSolid(Color.FromName(ColorName.BlueViolet));

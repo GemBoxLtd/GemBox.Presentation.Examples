@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,23 +7,23 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new slide.
-        Slide slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
+        var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
         // Create new text box.
-        TextBox textBox = slide.Content.AddTextBox(
+        var textBox = slide.Content.AddTextBox(
             ShapeGeometryType.RoundedRectangle, 2, 2, 10, 4, LengthUnit.Centimeter);
 
         // Create new paragraph.
-        TextParagraph paragraph = textBox.AddParagraph();
+        var paragraph = textBox.AddParagraph();
 
         // Set paragraph text.
         paragraph.AddRun("This paragraph has the following properties: alignment is justify, after spacing is 100% of the text size, before spacing is 250% of the text size, line spacing is 200% of the text size.");
 
         // Set selected paragraph format.
-        TextParagraphFormat format = paragraph.Format;
+        var format = paragraph.Format;
         format.Alignment = HorizontalAlignment.Justify;
         format.SpacingAfter = TextSpacing.Single;
         format.SpacingBefore = TextSpacing.Multiple(2.5);

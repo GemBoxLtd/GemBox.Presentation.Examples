@@ -13,9 +13,9 @@ Imports System.Windows
 
 <Assembly: AssemblyTitle("PrintVb")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("GemBox Ltd.")>
+<Assembly: AssemblyCompany("GemBox d.o.o.")>
 <Assembly: AssemblyProduct("PrintVb")>
-<Assembly: AssemblyCopyright("Copyright © GemBox Ltd.")>
+<Assembly: AssemblyCopyright("Copyright © GemBox d.o.o.")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 

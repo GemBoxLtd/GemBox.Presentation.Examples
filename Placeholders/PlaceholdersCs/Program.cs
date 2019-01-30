@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using GemBox.Presentation;
 
@@ -9,23 +8,23 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Create new master slide.
-        MasterSlide master = presentation.MasterSlides.AddNew();
+        var master = presentation.MasterSlides.AddNew();
 
         // Create new empty layout slide for existing master slide.
-        LayoutSlide layout = master.LayoutSlides.AddNew(SlideLayoutType.Custom);
+        var layout = master.LayoutSlides.AddNew(SlideLayoutType.Custom);
 
         // Create title and subtitle placeholders on layout slide.
         layout.Content.AddPlaceholder(PlaceholderType.Title);
         layout.Content.AddPlaceholder(PlaceholderType.Subtitle);
 
         // Create new slide; will inherit all placeholders (title and subtitle) from template layout slide.
-        Slide slide = presentation.Slides.AddNew(layout);
+        var slide = presentation.Slides.AddNew(layout);
 
         // Retrieve "Title" placeholder.
-        Shape shape = slide.Content.Drawings.OfType<Shape>().Where(item => item.Placeholder?.PlaceholderType == PlaceholderType.Title).First();
+        var shape = slide.Content.Drawings.OfType<Shape>().Where(item => item.Placeholder?.PlaceholderType == PlaceholderType.Title).First();
 
         // Set shape fill and outline format.
         shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkGray));

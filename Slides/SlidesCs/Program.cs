@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,10 +7,10 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = new PresentationDocument();
+        var presentation = new PresentationDocument();
 
         // Get slide size.
-        SlideSize size = presentation.SlideSize;
+        var size = presentation.SlideSize;
 
         // Set slide size.
         size.SizedFor = SlideSizeType.OnscreenShow16X10;
@@ -19,13 +18,13 @@ class Program
         size.NumberSlidesFrom = 1;
 
         // Create new master slide.
-        MasterSlide master = presentation.MasterSlides.AddNew();
+        var master = presentation.MasterSlides.AddNew();
 
         // Create new layout slide for existing master slide.
-        LayoutSlide layout = master.LayoutSlides.AddNew(SlideLayoutType.TitleAndObject);
+        var layout = master.LayoutSlides.AddNew(SlideLayoutType.TitleAndObject);
 
         // Create new slide from existing template layout slide.
-        Slide slide = presentation.Slides.AddNew(layout);
+        var slide = presentation.Slides.AddNew(layout);
 
         // If master slide collection is empty, this method will add a new master slide.
         // If layout slide collection of the last master slide doesn't contain a layout slide with the specified type, 

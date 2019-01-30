@@ -3,52 +3,49 @@ using System.Diagnostics;
 using System.Linq;
 using GemBox.Presentation;
 
-namespace PerformanceCs
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            // If using Professional version, put your serial key below.
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+        // If using Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-            // If sample exceeds Free version limitations then continue as trial version: 
-            // https://www.gemboxsoftware.com/presentation/help/html/Evaluation_and_Licensing.htm
-            ComponentInfo.FreeLimitReached += (sender, e) => e.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial;
+        // If example exceeds Free version limitations then continue as trial version: 
+        // https://www.gemboxsoftware.com/Presentation/help/html/Evaluation_and_Licensing.htm
+        ComponentInfo.FreeLimitReached += (sender, e) => e.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial;
 
-            Console.WriteLine("Performance sample:");
-            Console.WriteLine();
+        Console.WriteLine("Performance example:");
+        Console.WriteLine();
 
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
+        var stopwatch = new Stopwatch();
+        stopwatch.Start();
 
-            PresentationDocument presentation = PresentationDocument.Load("Template.pptx", LoadOptions.Pptx);
+        var presentation = PresentationDocument.Load("Template.pptx", LoadOptions.Pptx);
 
-            Console.WriteLine("Load file (seconds): " + stopwatch.Elapsed.TotalSeconds);
+        Console.WriteLine("Load file (seconds): " + stopwatch.Elapsed.TotalSeconds);
 
-            stopwatch.Reset();
-            stopwatch.Start();
+        stopwatch.Reset();
+        stopwatch.Start();
 
-            int numberOfShapes = 0;
-            int numberOfParagraphs = 0;
+        int numberOfShapes = 0;
+        int numberOfParagraphs = 0;
 
-            foreach (Slide slide in presentation.Slides)
-                foreach (Shape shape in slide.Content.Drawings.OfType<Shape>())
-                {
-                    foreach (TextParagraph paragraph in shape.Text.Paragraphs)
-                        ++numberOfParagraphs;
+        foreach (var slide in presentation.Slides)
+            foreach (var shape in slide.Content.Drawings.OfType<Shape>())
+            {
+                foreach (var paragraph in shape.Text.Paragraphs)
+                    ++numberOfParagraphs;
 
-                    ++numberOfShapes;
-                }
+                ++numberOfShapes;
+            }
 
-            Console.WriteLine("Iterate through " + numberOfShapes + " shapes and " + numberOfParagraphs + " paragraphs (seconds): " + stopwatch.Elapsed.TotalSeconds);
+        Console.WriteLine("Iterate through " + numberOfShapes + " shapes and " + numberOfParagraphs + " paragraphs (seconds): " + stopwatch.Elapsed.TotalSeconds);
 
-            stopwatch.Reset();
-            stopwatch.Start();
+        stopwatch.Reset();
+        stopwatch.Start();
 
-            presentation.Save("Report.pptx");
+        presentation.Save("Report.pptx");
 
-            Console.WriteLine("Save file (seconds): " + stopwatch.Elapsed.TotalSeconds);
-        }
+        Console.WriteLine("Save file (seconds): " + stopwatch.Elapsed.TotalSeconds);
     }
 }

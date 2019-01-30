@@ -9,14 +9,14 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("Reading.pptx");
+        var presentation = PresentationDocument.Load("Reading.pptx");
 
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
 
         sb.AppendLine("Slide size (width X height):");
 
-        Length width = presentation.SlideSize.Width;
-        Length height = presentation.SlideSize.Height;
+        var width = presentation.SlideSize.Width;
+        var height = presentation.SlideSize.Height;
 
         foreach (LengthUnit unit in Enum.GetValues(typeof(LengthUnit)))
         {

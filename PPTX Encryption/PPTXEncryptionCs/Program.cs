@@ -1,4 +1,3 @@
-using System;
 using GemBox.Presentation;
 
 class Program
@@ -12,7 +11,6 @@ class Program
         string outputPassword = "outpass";
 
         var presentation = PresentationDocument.Load("PptxEncryption.pptx", new PptxLoadOptions() { Password = inputPassword });
-
         presentation.Save("PPTX Encryption.pptx", new PptxSaveOptions() { Password = outputPassword });
     }
 }

@@ -10,23 +10,23 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        PresentationDocument presentation = PresentationDocument.Load("Reading.pptx");
+        var presentation = PresentationDocument.Load("Reading.pptx");
 
-        StringBuilder sb = new StringBuilder();
+        var sb = new StringBuilder();
 
-        Slide slide = presentation.Slides[0];
+        var slide = presentation.Slides[0];
 
-        foreach (Shape shape in slide.Content.Drawings.OfType<Shape>())
+        foreach (var shape in slide.Content.Drawings.OfType<Shape>())
         {
             sb.AppendFormat("Shape ShapeType={0}:", shape.ShapeType);
             sb.AppendLine();
 
-            foreach (TextParagraph paragraph in shape.Text.Paragraphs)
+            foreach (var paragraph in shape.Text.Paragraphs)
             {
-                foreach (TextRun run in paragraph.Elements.OfType<TextRun>())
+                foreach (var run in paragraph.Elements.OfType<TextRun>())
                 {
-                    bool isBold = run.Format.Bold;
-                    string text = run.Text;
+                    var isBold = run.Format.Bold;
+                    var text = run.Text;
 
                     sb.AppendFormat("{0}{1}{2}", isBold ? "<b>" : "", text, isBold ? "</b>" : "");
                 }
