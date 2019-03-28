@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ConvertToImageSourceCs")]
+[assembly: AssemblyTitle("ExportToImageSourceCs")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GemBox Ltd.")]
-[assembly: AssemblyProduct("ConvertToImageSourceCs")]
-[assembly: AssemblyCopyright("Copyright © GemBox Ltd.")]
+[assembly: AssemblyCompany("GemBox d.o.o.")]
+[assembly: AssemblyProduct("ExportToImageSourceCs")]
+[assembly: AssemblyCopyright("Copyright © GemBox d.o.o.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

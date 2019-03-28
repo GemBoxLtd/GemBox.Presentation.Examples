@@ -218,17 +218,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerformanceCs", "Performanc
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PerformanceVb", "Performance\PerformanceVb\PerformanceVb.vbproj", "{620BE5F2-E1D4-4BA3-AF4A-3760F54707C6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExportToImageSource", "ExportToImageSource", "{68015EA3-CC44-4B27-98D7-A93B160F6C06}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Export To Image Source", "Export To Image Source", "{68015EA3-CC44-4B27-98D7-A93B160F6C06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertToImageSourceCs", "ExportToImageSource\ConvertToImageSourceCs\ConvertToImageSourceCs.csproj", "{73DF0CC0-24F6-47C2-AEC5-3E2574FD00C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportToImageSourceCs", "Export To Image Source\ExportToImageSourceCs\ExportToImageSourceCs.csproj", "{73DF0CC0-24F6-47C2-AEC5-3E2574FD00C9}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertToImageSourceVb", "ExportToImageSource\ConvertToImageSourceVb\ConvertToImageSourceVb.vbproj", "{69239C02-27DE-4961-87E4-711F7CABAF93}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportToImageSourceVb", "Export To Image Source\ExportToImageSourceVb\ExportToImageSourceVb.vbproj", "{69239C02-27DE-4961-87E4-711F7CABAF93}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExportToXpsDocument", "ExportToXpsDocument", "{ED68872F-6C04-4976-AB07-887BFBE59ADF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Export To Xps Document", "Export To Xps Document", "{ED68872F-6C04-4976-AB07-887BFBE59ADF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertToXpsDocumentCs", "ExportToXpsDocument\ConvertToXpsDocumentCs\ConvertToXpsDocumentCs.csproj", "{BFF6B6F5-ADDA-4A43-81F2-CC4F2E6BE141}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportToXpsDocumentCs", "Export To Xps Document\ExportToXpsDocumentCs\ExportToXpsDocumentCs.csproj", "{BFF6B6F5-ADDA-4A43-81F2-CC4F2E6BE141}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertToXpsDocumentVb", "ExportToXpsDocument\ConvertToXpsDocumentVb\ConvertToXpsDocumentVb.vbproj", "{0DA29309-80A1-4E61-9B15-2889C1A5D103}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportToXpsDocumentVb", "Export To Xps Document\ExportToXpsDocumentVb\ExportToXpsDocumentVb.vbproj", "{0DA29309-80A1-4E61-9B15-2889C1A5D103}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET", "ASP.NET", "{31284CE0-AE3F-4D94-8AFE-9C39C2BF8C87}"
 EndProject
@@ -241,6 +241,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PPTXModifyProtectionCs", "PPTX Modify Protection\PPTXModifyProtectionCs\PPTXModifyProtectionCs.csproj", "{57EE74F8-3419-41FC-909F-3B36DFC7AF8A}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PPTXModifyProtectionVb", "PPTX Modify Protection\PPTXModifyProtectionVb\PPTXModifyProtectionVb.vbproj", "{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Find and Replace", "Find and Replace", "{2377D218-BC96-426C-A376-BB5F05B2786A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindandReplaceCs", "Find and Replace\FindandReplaceCs\FindandReplaceCs.csproj", "{7F981E97-8801-41FB-AC00-CB69C1EB00BC}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "FindandReplaceVb", "Find and Replace\FindandReplaceVb\FindandReplaceVb.vbproj", "{01A04E3C-5683-412A-91D7-A34AA7FB52F9}"
 EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
@@ -564,6 +570,14 @@ Global
 		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F981E97-8801-41FB-AC00-CB69C1EB00BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F981E97-8801-41FB-AC00-CB69C1EB00BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F981E97-8801-41FB-AC00-CB69C1EB00BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F981E97-8801-41FB-AC00-CB69C1EB00BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01A04E3C-5683-412A-91D7-A34AA7FB52F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01A04E3C-5683-412A-91D7-A34AA7FB52F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01A04E3C-5683-412A-91D7-A34AA7FB52F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01A04E3C-5683-412A-91D7-A34AA7FB52F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -647,6 +661,8 @@ Global
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE} = {31284CE0-AE3F-4D94-8AFE-9C39C2BF8C87}
 		{57EE74F8-3419-41FC-909F-3B36DFC7AF8A} = {D9C5D931-82B8-4D67-B6AD-4B08F2C1FBF3}
 		{DAF8DA73-A6BB-4A04-94D9-6C7A29637636} = {D9C5D931-82B8-4D67-B6AD-4B08F2C1FBF3}
+		{7F981E97-8801-41FB-AC00-CB69C1EB00BC} = {2377D218-BC96-426C-A376-BB5F05B2786A}
+		{01A04E3C-5683-412A-91D7-A34AA7FB52F9} = {2377D218-BC96-426C-A376-BB5F05B2786A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {374BFC4A-A565-441A-A3E5-A0B79E9D4B7A}

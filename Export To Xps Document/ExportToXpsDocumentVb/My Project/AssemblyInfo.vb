@@ -11,11 +11,11 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ConvertToXpsDocumentVb")>
+<Assembly: AssemblyTitle("ExportToXpsDocumentVb")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("GemBox Ltd.")>
-<Assembly: AssemblyProduct("ConvertToXpsDocumentVb")>
-<Assembly: AssemblyCopyright("Copyright © GemBox Ltd.")>
+<Assembly: AssemblyCompany("GemBox d.o.o.")>
+<Assembly: AssemblyProduct("ExportToXpsDocumentVb")>
+<Assembly: AssemblyCopyright("Copyright © GemBox d.o.o.")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 

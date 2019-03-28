@@ -7,8 +7,8 @@
     <ProjectGuid>{73DF0CC0-24F6-47C2-AEC5-3E2574FD00C9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConvertToImageSourceCs</RootNamespace>
-    <AssemblyName>ConvertToImageSourceCs</AssemblyName>
+    <RootNamespace>ExportToImageSourceCs</RootNamespace>
+    <AssemblyName>ExportToImageSourceCs</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -37,8 +37,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GemBox.Presentation, Version=21.3.35.1038, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\GemBox.Presentation.21.3.35.1038\lib\net35\GemBox.Presentation.dll</HintPath>
+    <Reference Include="GemBox.Presentation, Version=23.0.35.1000, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GemBox.Presentation.23.0.0.1000\lib\net35\GemBox.Presentation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

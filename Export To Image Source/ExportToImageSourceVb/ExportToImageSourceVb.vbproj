@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0DA29309-80A1-4E61-9B15-2889C1A5D103}</ProjectGuid>
+    <ProjectGuid>{69239C02-27DE-4961-87E4-711F7CABAF93}</ProjectGuid>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ConvertToXpsDocumentVb</RootNamespace>
-    <AssemblyName>ConvertToXpsDocumentVb</AssemblyName>
+    <RootNamespace>ExportToImageSourceVb</RootNamespace>
+    <AssemblyName>ExportToImageSourceVb</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <TargetFrameworkProfile />
@@ -21,7 +21,7 @@
     <DefineTrace>true</DefineTrace>
     <IncrementalBuild>true</IncrementalBuild>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ConvertToXpsDocumentVb.xml</DocumentationFile>
+    <DocumentationFile>ExportToImageSourceVb.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -34,7 +34,7 @@
     <IncrementalBuild>false</IncrementalBuild>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ConvertToXpsDocumentVb.xml</DocumentationFile>
+    <DocumentationFile>ExportToImageSourceVb.xml</DocumentationFile>
     <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -51,10 +51,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GemBox.Presentation, Version=21.3.35.1038, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\GemBox.Presentation.21.3.35.1038\lib\net35\GemBox.Presentation.dll</HintPath>
+    <Reference Include="GemBox.Presentation, Version=23.0.35.1000, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GemBox.Presentation.23.0.0.1000\lib\net35\GemBox.Presentation.dll</HintPath>
     </Reference>
-    <Reference Include="ReachFramework" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
