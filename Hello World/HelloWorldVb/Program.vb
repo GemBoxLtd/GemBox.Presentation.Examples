@@ -1,4 +1,4 @@
-﻿Imports GemBox.Presentation
+Imports GemBox.Presentation
 
 Module Program
 

@@ -1,4 +1,4 @@
-﻿Imports System
+Imports System
 Imports System.Data
 Imports System.IO
 Imports System.Web.UI

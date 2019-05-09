@@ -4,7 +4,7 @@ using GemBox.Presentation.Media;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
