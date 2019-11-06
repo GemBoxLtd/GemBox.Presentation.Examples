@@ -1,15 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Index" %>
+﻿<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Index.aspx.vb" Inherits="MediumTrustSampleVb.Index" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>GemBox.Presentation Web Demo</title>
     <style type="text/css">
         * {
             font-family: Arial;
             font-size: 12pt;
             color: rgb(45,46,45);
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
         }
 
         .summaries {
