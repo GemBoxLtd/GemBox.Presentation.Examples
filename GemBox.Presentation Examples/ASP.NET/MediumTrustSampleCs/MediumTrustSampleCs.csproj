@@ -68,6 +68,14 @@
     <Content Include="Template.pptx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Fonts\arial.ttf" />
+    <Content Include="Fonts\arialbd.ttf" />
+    <Content Include="Fonts\calibri.ttf" />
+    <Content Include="Fonts\calibrib.ttf" />
+    <Content Include="Fonts\calibrii.ttf" />
+    <Content Include="Fonts\calibril.ttf" />
+    <Content Include="Fonts\calibrili.ttf" />
+    <Content Include="Fonts\calibriz.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

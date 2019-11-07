@@ -12,6 +12,10 @@ Partial Public Class Index
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
         AddHandler ComponentInfo.FreeLimitReached, Sub(s1, e1) e1.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial
 
+        ' By specifying a location that Is under ASP.NET application's control, 
+        ' GemBox.Presentation can retrieve font data when saving to PDF, even in Medium Trust environment.
+        FontSettings.FontsBaseDirectory = Server.MapPath("Fonts/")
+
         If Not Me.Page.IsPostBack Then
 
             ' Fill grid view with some default data.
