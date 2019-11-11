@@ -1,8 +1,10 @@
 # GemBox.Presentation
 
-<img src="https://www.gemboxsoftware.com/images/NugetGbp.png" alt="GemBox.Presentation logo" style="float:left;margin:1rem;" />
+<img src="https://www.gemboxsoftware.com/images/NugetGbp.png" alt="GemBox.Presentation logo" align="left" />
 
 GemBox.Presentation is a .NET component which enables developers to read, write, convert and print presentation files (PPTX, PPT, PDF, XPS and image formats) from .NET applications in a simple and efficient way.
+
+<br/>
 
 With GemBox.Presentation you get a standalone .NET component that doesn't dependent on Microsoft PowerPoint; that's fast and reliable; that's easy to install, use and deploy.
 
