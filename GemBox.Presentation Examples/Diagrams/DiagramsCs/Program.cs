@@ -7,8 +7,8 @@ class Program
         // If using Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        var presentation = PresentationDocument.Load("ChartsAndDiagrams.pptx");
+        var presentation = PresentationDocument.Load("Diagrams.pptx");
 
-        presentation.Save("Charts and Diagrams.pptx");
+        presentation.Save("Diagrams Output.pptx");
     }
 }
