@@ -20,6 +20,22 @@ This repository contains the source code of GemBox.Presentation example projects
 * [Use PowerPoint slides in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-slides/401)
 * [Automate PowerPoint in PHP, Python and VBScript](https://www.gemboxsoftware.com/presentation/examples/powerpoint-automation-com-php-vbscript-python/1801)
 
+## Examples
+
+* Hello World [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Hello%20World)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Hello%20World)]
+* Common Uses [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Common%20Uses)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Common%20Uses)]
+* Formatting [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Formatting)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Formatting)]
+* Basic Features [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Basic%20Features)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Basic%20Features)]
+* Advanced Features [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Advanced%20Features)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Advanced%20Features)]
+* Table [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Table)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Table)]
+* Protection [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Protection)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Protection)]
+* Preservation [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Preservation)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Preservation)]
+* WPF [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/WPF)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/WPF)]
+* Linux / macOS [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Linux_macOS)]
+* COM [[PYTHON](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/PYTHON,%20PHP,%20VBSCRIPT/COM.py)][[PHP](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/PYTHON,%20PHP,%20VBSCRIPT/COM.php)][[VBSCRIPT](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/PYTHON,%20PHP,%20VBSCRIPT/COM.vbs)]
+* ASP.NET [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/ASP.NET)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/ASP.NET)]
+* Performance [[C#](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/C%23/Performance)][[VB.NET](https://github.com/gemboxsoftware-dev-team/GemBox.Presentation.Examples/tree/master/VB.NET/Performance)]
+
 ## System Requirement
 
 * .NET Framework 3.5 - 4.8
