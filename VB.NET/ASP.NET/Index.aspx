@@ -1,16 +1,22 @@
 ﻿<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Index.aspx.vb" Inherits="MediumTrust.Index" %>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>GemBox.Presentation Web Demo</title>
-    <style type="text/css">
+    <style>
         * {
             font-family: Arial;
-            font-size: 12pt;
+            font-size: 10pt;
             color: rgb(45,46,45);
+        }
+
+        h1 {
+            color: #0072bb;
+            font-size: 30pt;
+            text-align: center;
         }
 
         input[type="text"], textarea {
@@ -18,18 +24,18 @@
         }
 
         .summaries {
-            font-size: 18.67pt;
+            font-size: 14pt;
         }
 
         .heading {
             font-weight: bold;
-            font-size: 29.33pt;
+            font-size: 18pt;
             color: rgb(209,90,62);
         }
 
         .title {
             font-weight: bold;
-            font-size: 36pt;
+            font-size: 24pt;
         }
 
         hr {
@@ -43,6 +49,7 @@
     </style>
 </head>
 <body>
+    <h1>Create PowerPoint in ASP.NET</h1>
     <form id="form1" runat="server">
         <fieldset>
             <legend>Presentation form:</legend>

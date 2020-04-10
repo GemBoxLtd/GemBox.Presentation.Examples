@@ -49,8 +49,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GemBox.Presentation, Version=23.0.35.1030, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\GemBox.Presentation.23.0.0.1030\lib\net35\GemBox.Presentation.dll</HintPath>
+    <Reference Include="GemBox.Presentation, Version=23.0.35.1044, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\GemBox.Presentation.23.0.1044\lib\net35\GemBox.Presentation.dll</HintPath>
     </Reference>
     <Reference Include="ReachFramework" />
     <Reference Include="System.Core" />
