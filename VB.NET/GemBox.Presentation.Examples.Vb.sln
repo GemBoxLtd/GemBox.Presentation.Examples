@@ -109,6 +109,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance", "Performance"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Performance", "Performance\Performance.vbproj", "{809A3CE0-6FD7-4062-BB71-77CB9C705139}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{D3D056E2-88BC-4943-BBD8-5F8D0B5EF578}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AzureFunction", "Azure\AzureFunction.vbproj", "{BD99A065-DB34-4044-9947-0AA262A7DBA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +287,10 @@ Global
 		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -330,6 +338,7 @@ Global
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103} = {67B16847-800D-447C-B19E-C022E3DF0479}
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE} = {8742297C-9FC0-41D0-AB5E-B0E591473AB5}
 		{809A3CE0-6FD7-4062-BB71-77CB9C705139} = {C602EC6F-BB0B-4D9A-A155-83C0C86FC272}
+		{BD99A065-DB34-4044-9947-0AA262A7DBA4} = {D3D056E2-88BC-4943-BBD8-5F8D0B5EF578}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {763097D6-878C-4309-923F-F011E62FF47A}
