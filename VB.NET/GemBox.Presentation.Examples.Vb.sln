@@ -13,7 +13,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Cloning", "Common Uses\Clon
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Convert", "Common Uses\Convert\Convert.vbproj", "{094AB22B-2B31-45FC-A636-E82659F014BA}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "FindAndReplace", "Common Uses\Find And Replace\FindAndReplace.vbproj", "{47D177E9-5719-469E-9ADC-4B2C9412A723}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "FindAndReplace", "Common Uses\Find and Replace\FindAndReplace.vbproj", "{47D177E9-5719-469E-9ADC-4B2C9412A723}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Print", "Common Uses\Print\Print.vbproj", "{CD43243B-DAF6-4713-84BA-E63C7209C167}"
 EndProject
@@ -35,7 +35,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "TextBoxFormatting", "Format
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic Features", "Basic Features", "{0A86EA14-8B6A-49AA-9B08-9640C8CD8169}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AudioAndVideo", "Basic Features\Audio And Video\AudioAndVideo.vbproj", "{E90912BC-9709-4C22-ADAC-247C6A044BC7}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AudioAndVideo", "Basic Features\Audio and Video\AudioAndVideo.vbproj", "{E90912BC-9709-4C22-ADAC-247C6A044BC7}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Charts", "Basic Features\Charts\Charts.vbproj", "{3F655CB3-B535-4F90-9164-B75F93C4A0E5}"
 EndProject
@@ -43,7 +43,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Comments", "Basic Features\
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "DocumentProperties", "Basic Features\Document Properties\DocumentProperties.vbproj", "{CB25F98E-93BB-4258-9A15-C9E2B7657333}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "HeaderAndFooter", "Basic Features\Header And Footer\HeaderAndFooter.vbproj", "{75B1C1B9-A063-410D-906C-8C85C7131476}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "HeaderAndFooter", "Basic Features\Header and Footer\HeaderAndFooter.vbproj", "{75B1C1B9-A063-410D-906C-8C85C7131476}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Hyperlinks", "Basic Features\Hyperlinks\Hyperlinks.vbproj", "{6ACA35F9-C718-4816-8153-D74048F71D98}"
 EndProject
@@ -63,7 +63,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Advanced Features", "Advanc
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PrivateFonts", "Advanced Features\Private Fonts\PrivateFonts.vbproj", "{25BB5D14-41C8-4DEB-8AA6-64C16005EA6E}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "RightToLeftText", "Advanced Features\Right To Left Text\RightToLeftText.vbproj", "{FA2C2ACB-F8A9-4029-A702-9BF33D1762F3}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "RightToLeftText", "Advanced Features\Right to Left Text\RightToLeftText.vbproj", "{FA2C2ACB-F8A9-4029-A702-9BF33D1762F3}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "SlideShow", "Advanced Features\Slide Show\SlideShow.vbproj", "{E01F2C45-4187-4C55-A979-AD3902F0B7F5}"
 EndProject
@@ -81,13 +81,13 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "TableStyles", "Table\Table 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protection", "Protection", "{2F184289-9DAF-4441-8AEC-7E06253DE71D}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PDFDigitalSignature", "Protection\PDF Digital Signature\PDFDigitalSignature.vbproj", "{1CE1BFD0-48DA-45AC-B451-F9C80B98DBD4}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PdfDigitalSignature", "Protection\PDF Digital Signature\PdfDigitalSignature.vbproj", "{1CE1BFD0-48DA-45AC-B451-F9C80B98DBD4}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PDFEncryption", "Protection\PDF Encryption\PDFEncryption.vbproj", "{EDBDEDA0-0253-4B85-A322-2194598F10CD}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PdfEncryption", "Protection\PDF Encryption\PdfEncryption.vbproj", "{EDBDEDA0-0253-4B85-A322-2194598F10CD}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PPTXEncryption", "Protection\PPTX Encryption\PPTXEncryption.vbproj", "{71B4874A-9E49-4304-A4CB-E8341751E268}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PptxEncryption", "Protection\PPTX Encryption\PptxEncryption.vbproj", "{71B4874A-9E49-4304-A4CB-E8341751E268}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PPTXModifyProtection", "Protection\PPTX Modify Protection\PPTXModifyProtection.vbproj", "{876CDA20-F483-4B6F-A3C2-57BE84D02CA9}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PptxModifyProtection", "Protection\PPTX Modify Protection\PptxModifyProtection.vbproj", "{876CDA20-F483-4B6F-A3C2-57BE84D02CA9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Preservation", "Preservation", "{697EB55C-6983-47C9-889E-75115461B408}"
 EndProject
@@ -95,23 +95,23 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Diagrams", "Preservation\Di
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "EmbeddedObjects", "Preservation\Embedded Objects\EmbeddedObjects.vbproj", "{3192A2F0-DCFD-43DC-8502-946731916F2D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{67B16847-800D-447C-B19E-C022E3DF0479}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportToImageSource", "WPF\Export To ImageSource\ExportToImageSource.vbproj", "{69239C02-27DE-4961-87E4-711F7CABAF93}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportToXpsDocument", "WPF\Export To XpsDocument\ExportToXpsDocument.vbproj", "{0DA29309-80A1-4E61-9B15-2889C1A5D103}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET", "ASP.NET", "{8742297C-9FC0-41D0-AB5E-B0E591473AB5}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MediumTrust", "ASP.NET\MediumTrust.vbproj", "{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance", "Performance", "{C602EC6F-BB0B-4D9A-A155-83C0C86FC272}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Performance", "Performance\Performance.vbproj", "{809A3CE0-6FD7-4062-BB71-77CB9C705139}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{D3D056E2-88BC-4943-BBD8-5F8D0B5EF578}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PptxDigitalSignature", "Protection\PPTX Digital Signature\PptxDigitalSignature.vbproj", "{1DC7E035-7EC3-431A-9E8E-E9795CE40247}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AzureFunction", "Azure\AzureFunction.vbproj", "{BD99A065-DB34-4044-9947-0AA262A7DBA4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AzureFunction", "Platforms\Azure\AzureFunction.vbproj", "{A3594D82-989E-4AFD-90EE-E70ED2C2154B}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PresentationDocker", "Platforms\Docker\PresentationDocker.vbproj", "{C165D288-0565-4337-B779-8FE4BB7C0BC0}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfExportToImageSource", "Platforms\Export to ImageSource in WPF\WpfExportToImageSource.vbproj", "{69239C02-27DE-4961-87E4-711F7CABAF93}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfExportToXpsDocument", "Platforms\Export to XpsDocument in WPF\WpfExportToXpsDocument.vbproj", "{0DA29309-80A1-4E61-9B15-2889C1A5D103}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MediumTrust", "Platforms\MediumTrust in ASP.NET\MediumTrust.vbproj", "{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -271,6 +271,22 @@ Global
 		{3192A2F0-DCFD-43DC-8502-946731916F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3192A2F0-DCFD-43DC-8502-946731916F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3192A2F0-DCFD-43DC-8502-946731916F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC7E035-7EC3-431A-9E8E-E9795CE40247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC7E035-7EC3-431A-9E8E-E9795CE40247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC7E035-7EC3-431A-9E8E-E9795CE40247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC7E035-7EC3-431A-9E8E-E9795CE40247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3594D82-989E-4AFD-90EE-E70ED2C2154B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3594D82-989E-4AFD-90EE-E70ED2C2154B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3594D82-989E-4AFD-90EE-E70ED2C2154B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3594D82-989E-4AFD-90EE-E70ED2C2154B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C165D288-0565-4337-B779-8FE4BB7C0BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C165D288-0565-4337-B779-8FE4BB7C0BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C165D288-0565-4337-B779-8FE4BB7C0BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C165D288-0565-4337-B779-8FE4BB7C0BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69239C02-27DE-4961-87E4-711F7CABAF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69239C02-27DE-4961-87E4-711F7CABAF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69239C02-27DE-4961-87E4-711F7CABAF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -283,14 +299,6 @@ Global
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{809A3CE0-6FD7-4062-BB71-77CB9C705139}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD99A065-DB34-4044-9947-0AA262A7DBA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -334,11 +342,13 @@ Global
 		{876CDA20-F483-4B6F-A3C2-57BE84D02CA9} = {2F184289-9DAF-4441-8AEC-7E06253DE71D}
 		{1CD10D21-CC89-41F0-84D6-577580717D77} = {697EB55C-6983-47C9-889E-75115461B408}
 		{3192A2F0-DCFD-43DC-8502-946731916F2D} = {697EB55C-6983-47C9-889E-75115461B408}
-		{69239C02-27DE-4961-87E4-711F7CABAF93} = {67B16847-800D-447C-B19E-C022E3DF0479}
-		{0DA29309-80A1-4E61-9B15-2889C1A5D103} = {67B16847-800D-447C-B19E-C022E3DF0479}
-		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE} = {8742297C-9FC0-41D0-AB5E-B0E591473AB5}
 		{809A3CE0-6FD7-4062-BB71-77CB9C705139} = {C602EC6F-BB0B-4D9A-A155-83C0C86FC272}
-		{BD99A065-DB34-4044-9947-0AA262A7DBA4} = {D3D056E2-88BC-4943-BBD8-5F8D0B5EF578}
+		{1DC7E035-7EC3-431A-9E8E-E9795CE40247} = {2F184289-9DAF-4441-8AEC-7E06253DE71D}
+		{A3594D82-989E-4AFD-90EE-E70ED2C2154B} = {4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}
+		{C165D288-0565-4337-B779-8FE4BB7C0BC0} = {4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}
+		{69239C02-27DE-4961-87E4-711F7CABAF93} = {4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}
+		{0DA29309-80A1-4E61-9B15-2889C1A5D103} = {4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}
+		{762FB83F-EF58-4EDE-A431-23A58BEA9BEE} = {4E438A9D-54D2-4FD2-A6AE-1A46D622AD57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {763097D6-878C-4309-923F-F011E62FF47A}

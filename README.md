@@ -31,19 +31,15 @@ This repository contains the source code of GemBox.Presentation example projects
 | Advanced Features | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Advanced%20Features), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Advanced%20Features) |
 | Table | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Table), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Table) |
 | Protection | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Protection), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Protection) |
+| Platforms | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Platforms), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Platforms) |
 | Preservation | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Preservation), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Preservation) |
-| WPF | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/WPF), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/WPF) |
-| Linux / macOS | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Linux_macOS) |
-| COM | [PYTHON](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.py), [PHP](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.php), [VBSCRIPT](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.vbs) |
-| ASP.NET | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/ASP.NET), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/ASP.NET) |
-| ASP.NET Core | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/ASP.NET%20Core) |
-| Azure | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Azure), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Azure) |
 | Performance | [C#](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/C%23/Performance), [VB.NET](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/tree/master/VB.NET/Performance) |
+| COM | [PYTHON](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.py), [PHP](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.php), [VBSCRIPT](https://github.com/GemBox-d-o-o/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.vbs) |
 
 ## System Requirement
 
 * .NET Framework 3.5 - 4.8
-* .NET Core 3.0
+* .NET Core 3.1
 * Or platforms that implement .NET Standard 2.0 or higher.
 
 ## Installation
