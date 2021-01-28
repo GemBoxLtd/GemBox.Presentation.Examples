@@ -1,4 +1,3 @@
-using System.IO;
 using GemBox.Pdf.Forms;
 using GemBox.Pdf.Security;
 using GemBox.Presentation;
