@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GemBox.Presentation" Version="*" />
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App.Wpf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="CardWithPlaceholderTexts.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
