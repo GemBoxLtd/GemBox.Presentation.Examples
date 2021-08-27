@@ -1,5 +1,7 @@
 # GemBox.Presentation
 
+[![NuGet version](https://img.shields.io/nuget/v/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![NuGet downloads](https://img.shields.io/nuget/dt/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![Visual Studio Marketplace rating](https://img.shields.io/visual-studio-marketplace/stars/GemBoxSoftware.GemBoxPresentation?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=GemBoxSoftware.GemBoxPresentation)
+
 <img src="https://www.gemboxsoftware.com/images/NugetGbp.png" alt="GemBox.Presentation logo" align="left" />
 
 GemBox.Presentation is a .NET component which enables developers to read, write, convert and print presentation files (PPTX, PPT, PDF, XPS and image formats) from .NET applications in a simple and efficient way.
@@ -44,17 +46,15 @@ This repository contains the source code of GemBox.Presentation example projects
 
 ## Installation
 
-You can download GemBox.Presentation from [BugFixes](https://www.gemboxsoftware.com/presentation/downloads/bugfixes.html) 🛠️
+You can download GemBox.Presentation from [BugFixes 🛠️](https://www.gemboxsoftware.com/presentation/downloads/bugfixes.html) or from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/).
 
-Or from [NuGet](https://www.nuget.org/packages/GemBox.Presentation/) 📦
+## Support
 
-## Resources
-
-* [Overview](https://www.gemboxsoftware.com/presentation)
-* [Documentation](https://www.gemboxsoftware.com/presentation/docs/introduction.html)
-* [Support](https://www.gemboxsoftware.com/presentation/support)
+* [Contact Us](https://support.gemboxsoftware.com/new-ticket?ticket%5Bdepartment%5D=1&ticket%5Bproduct%5D=4)
+* [Forum](https://forum.gemboxsoftware.com/c/gembox-presentation/8)
 * [Blog](https://www.gemboxsoftware.com/gembox-presentation)
+* [API Reference](https://www.gemboxsoftware.com/presentation/docs/introduction.html)
 
 ## License
 
-You can download GemBox.Presentation's license agreement from [EULA.rtf](https://www.gemboxsoftware.com/EULA.rtf) 📝
+You can download GemBox.Presentation's license agreement from [EULA.rtf 📝](https://www.gemboxsoftware.com/EULA.rtf).
