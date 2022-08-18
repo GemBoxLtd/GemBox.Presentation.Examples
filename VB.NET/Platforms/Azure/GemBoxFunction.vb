@@ -7,31 +7,31 @@ Imports Microsoft.Extensions.Logging
 Imports GemBox.Presentation
 
 Module GemBoxFunction
-        <FunctionName("GemBoxFunction")>
-        Async Function Run(
-            <HttpTrigger(AuthorizationLevel.Anonymous, "get", Route := Nothing)> req As HttpRequest,
-            log As ILogger) as Task(Of IActionResult)
-        
-            ' If using Professional version, put your serial key below.
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+#Disable Warning BC42356 ' This async method lacks 'Await'.
+    <FunctionName("GemBoxFunction")>
+    Async Function Run(<HttpTrigger(AuthorizationLevel.Anonymous, "get", Route:=Nothing)> req As HttpRequest, log As ILogger) As Task(Of IActionResult)
+#Enable Warning BC42356
 
-            Dim presentation As New PresentationDocument()
+        ' If using Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
-            Dim slide = presentation.Slides.AddNew(SlideLayoutType.Custom)
+        Dim presentation As New PresentationDocument()
 
-            Dim textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 5, 4, LengthUnit.Centimeter)
+        Dim slide = presentation.Slides.AddNew(SlideLayoutType.Custom)
 
-            Dim paragraph = textBox.AddParagraph()
+        Dim textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 2, 2, 5, 4, LengthUnit.Centimeter)
 
-            paragraph.AddRun("Hello World!")
+        Dim paragraph = textBox.AddParagraph()
 
-            Dim fileName = "Output.pptx"
-            Dim options = SaveOptions.Pptx
+        paragraph.AddRun("Hello World!")
 
-            Using stream As New MemoryStream()
-                presentation.Save(stream, options)
-                Return New FileContentResult(stream.ToArray(), options.ContentType) With { .FileDownloadName = fileName }
-            End Using
-             
-        End Function
+        Dim fileName = "Output.pptx"
+        Dim options = SaveOptions.Pptx
+
+        Using stream As New MemoryStream()
+            presentation.Save(stream, options)
+            Return New FileContentResult(stream.ToArray(), options.ContentType) With { .FileDownloadName = fileName }
+        End Using
+
+    End Function
 End Module

@@ -113,7 +113,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfExportToXpsDocument", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linux_macOS", "Platforms\Linux_macOS\Linux_macOS.csproj", "{0BE79CBE-DD5C-4FC1-B22C-806C8025913D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMediumTrust", "Platforms\MediumTrust in ASP.NET\AspNetMediumTrust.csproj", "{F9E12BF5-1607-4514-A60E-9FD7FF8080B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMediumTrust", "Platforms\ASP.NET\AspNetMediumTrust.csproj", "{F9E12BF5-1607-4514-A60E-9FD7FF8080B4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreMvc", "Platforms\ASP.NET Core\MVC\AspNetCoreMvc.csproj", "{4E2000A3-485F-42BB-AB6A-4B3B2A97BB5A}"
 EndProject
