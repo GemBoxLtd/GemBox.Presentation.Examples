@@ -1,60 +1,68 @@
-# GemBox.Presentation
+## What is GemBox.Presentation?
 
-[![NuGet version](https://img.shields.io/nuget/v/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![NuGet downloads](https://img.shields.io/nuget/dt/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![Visual Studio Marketplace rating](https://img.shields.io/visual-studio-marketplace/stars/GemBoxSoftware.GemBoxPresentation?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=GemBoxSoftware.GemBoxPresentation)
+GemBox.Presentation is a .NET component that enables you to read, write, edit, convert, and print PowerPoint presentations from your .NET applications using a straightforward API.
 
-<img src="https://www.gemboxsoftware.com/images/NugetGbp.png" alt="GemBox.Presentation logo" align="left" />
+With GemBox.Presentation, you get a fast and reliable component that's easy to use. It requires only the .NET, so you can deploy your application easily without considering other licenses. And it's up to 20 times faster than Microsoft PowerPoint automation!
 
-GemBox.Presentation is a .NET component which enables developers to read, write, convert and print presentation files (PPTX, PPT, PDF, XPS and image formats) from .NET applications in a simple and efficient way.
+## GemBox.Email Features
 
-<br/>
+-   [Read](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-open-read-powerpoint/201) PowerPoint (PPTX) and PowerPoint 97-2003 (PPT) presentations.
+-   [Write/create](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-create-write-powerpoint/202) and [convert](https://www.gemboxsoftware.com/presentation/examples/c-sharp-convert-powerpoint-to-pdf/204) to PPTX, PDF, PDF/A, XPS, and image formats.
+-   View presentations in [WPF](https://www.gemboxsoftware.com/presentation/examples/powerpoint-xpsdocument-wpf/1701) applications.
+-   [Print](https://www.gemboxsoftware.com/presentation/examples/c-sharp-print-powerpoint/251) presentations.
+-   [Encrypt PPTX](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-pptx-encryption/803) presentations. [Encrypt](https://www.gemboxsoftware.com/presentation/examples/pdf-encryption/801) and [digitally sign PDF](https://www.gemboxsoftware.com/presentation/examples/pdf-digital-signature/802) presentations.
+-   Get, create, or edit [master slides, layout slides, individual slides](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-slides/401), [master notes slide, and notes slides](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-slide-notes/411).
+-   Get, create, or edit drawings like [text boxes](https://www.gemboxsoftware.com/presentation/examples/powerpoint-textboxes/404), [connectors](https://www.gemboxsoftware.com/presentation/examples/powerpoint-shapes/403), [pictures](https://www.gemboxsoftware.com/presentation/examples/powerpoint-pictures/405), [tables](https://www.gemboxsoftware.com/presentation/examples/powerpoint-tables/601), [charts](https://www.gemboxsoftware.com/presentation/examples/powerpoint-charts/412), and [media (audio and video)](https://www.gemboxsoftware.com/presentation/examples/powerpoint-audio-video/406).
+-   Get, create, or edit the text in shapes and table cells specified through [paragraphs, runs, fields, and line breaks](https://www.gemboxsoftware.com/presentation/examples/powerpoint-textboxes/404).
+-   Get, create, or edit [hyperlinks](https://www.gemboxsoftware.com/presentation/examples/powerpoint-hyperlinks/409), [comments](https://www.gemboxsoftware.com/presentation/examples/powerpoint-comments/408), [placeholders](https://www.gemboxsoftware.com/presentation/examples/powerpoint-placeholders/402), [headers, and footers](https://www.gemboxsoftware.com/presentation/examples/powerpoint-header-footer/407).
+-   Get, create, or edit [shapes](https://www.gemboxsoftware.com/presentation/examples/powerpoint-shape-formatting/301), [table](https://www.gemboxsoftware.com/presentation/examples/powerpoint-table-formatting/602), [text box](https://www.gemboxsoftware.com/presentation/examples/powerpoint-textbox-formatting/302), [paragraph](https://www.gemboxsoftware.com/presentation/examples/powerpoint-paragraph-formatting/303), and [character](https://www.gemboxsoftware.com/presentation/examples/powerpoint-character-formatting/304) formatting.
+-   Get, create, or edit [table](https://www.gemboxsoftware.com/presentation/examples/powerpoint-table-styles/603) styles.
+-   Get and set [built-in and custom presentation properties](https://www.gemboxsoftware.com/presentation/examples/powerpoint-properties/410).
+-   Access or modify [slide size](https://www.gemboxsoftware.com/presentation/docs/GemBox.Presentation.PresentationDocument.html#GemBox_Presentation_PresentationDocument_SlideSize), [slide transition](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slide-transition/501), and [slide show](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slideshow/502) settings.
+-   [Preserve](https://www.gemboxsoftware.com/presentation/examples/powerpoint-diagrams/701) unsupported presentation content elements and properties when reading a presentation.
 
-With GemBox.Presentation you get a standalone .NET component that doesn't dependent on Microsoft PowerPoint; that's fast and reliable; that's easy to install, use and deploy.
+## Get Started
 
-This repository contains the source code of GemBox.Presentation example projects for demos and live examples that are available on [PowerPoint Library in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-library/101) ▶
+You are not sure how to start working with PowerPoint presentations in .NET using GemBox.Presentation? Check the code below that shows how to create a PPTX file from scratch and write 'Hello World!' on it.
 
-## Top Features
+```Csharp
+// If using Professional version, put your serial key below.
+ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-* [Open and read PowerPoint file in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-open-read-powerpoint/201)
-* [Create and write PowerPoint file in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-create-write-powerpoint/202)
-* [Create PowerPoint (PPTX) or PDF file in ASP.NET Core](https://www.gemboxsoftware.com/presentation/examples/asp-net-core-create-powerpoint-pptx-pdf/2001)
-* [Load and Save PPTX in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-pptx/203)
-* [Convert PowerPoint file to PDF in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-convert-powerpoint-to-pdf/204)
-* [Print PowerPoint file in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-print-powerpoint/251)
-* [Use PowerPoint slides in C# and VB.NET](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-slides/401)
+// Create new empty presentation.
+var presentation = new PresentationDocument();
 
-## Examples
+// Add a new custom slide.
+var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
 
-| | |
-| --- | --- |
-| Hello World | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Hello%20World), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Hello%20World) |
-| Common Uses | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Common%20Uses), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Common%20Uses) |
-| Formatting | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Formatting), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Formatting) |
-| Basic Features | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Basic%20Features), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Basic%20Features) |
-| Advanced Features | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Advanced%20Features), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Advanced%20Features) |
-| Table | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Table), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Table) |
-| Protection | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Protection), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Protection) |
-| Platforms | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Platforms), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Platforms) |
-| Preservation | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Preservation), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Preservation) |
-| Performance | [C#](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/C%23/Performance), [VB.NET](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/tree/master/VB.NET/Performance) |
-| COM | [PYTHON](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.py), [PHP](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.php), [VBSCRIPT](https://github.com/GemBoxLtd/GemBox.Presentation.Examples/blob/master/PYTHON%2C%20PHP%2C%20VBSCRIPT/COM.vbs) |
+// Add a rectangle and fill it with dark blue color.
+var shape = slide.Content.AddShape(
+    ShapeGeometryType.RoundedRectangle, 2, 2, 8, 4, LengthUnit.Centimeter);
+shape.Format.Fill.SetSolid(Color.FromName(ColorName.DarkBlue));
 
-## System Requirement
+// Add a paragraph and some text, and set text color to white.
+var run = shape.Text.AddParagraph().AddRun("Hello World!");
+run.Format.Fill.SetSolid(Color.FromName(ColorName.White));
 
-* .NET Framework 3.5 - 4.8
-* .NET Core 3.1 (.NET 5 & 6 for Windows)
-* .NET Standard 2.0 (.NET 5 & 6 for Linux, macOS, Android, iOS, …)
+// Save the presentation as PowerPoint's PPTX file.
+presentation.Save("Writing.pptx");
+```
+
+For more GemBox.Presentation code examples and demos, please visit our [examples page](https://www.gemboxsoftware.com/presentation/examples/c-sharp-vb-net-powerpoint-library/101).
 
 ## Installation
 
 You can download GemBox.Presentation from [BugFixes 🛠️](https://www.gemboxsoftware.com/presentation/downloads/bugfixes.html) or from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/).
 
-## Support
+##Resources:
 
-* [Contact Us](https://support.gemboxsoftware.com/new-ticket?ticket%5Bdepartment%5D=1&ticket%5Bproduct%5D=4)
-* [Forum](https://forum.gemboxsoftware.com/c/gembox-presentation/8)
-* [Blog](https://www.gemboxsoftware.com/gembox-presentation)
-* [API Reference](https://www.gemboxsoftware.com/presentation/docs/introduction.html)
+-   [Product Page](https://www.gemboxsoftware.com/presentation)
+-   [Documentation](https://www.gemboxsoftware.com/presentation/docs/introduction.html)
+-   [API Reference](https://www.gemboxsoftware.com/presentation/docs/GemBox.Presentation) 
+-   [Examples](https://www.gemboxsoftware.com/presentation/examples/) 
+-   [Blog](https://www.gemboxsoftware.com/company/blog)
+-   [Forum](https://forum.gemboxsoftware.com/c/gembox-presentation/8?_gl=1*r7zx6*_ga*ODY3NTY5MzAwLjE2NDM3MTc3NjI.*_ga_G0LNRYNV9V*MTY1Nzc1NDI5MC4xMDM2LjEuMTY1Nzc2MDI2MS4w&_ga=2.252423241.1545338655.1657544747-867569300.1643717762)
 
-## License
 
-You can download GemBox.Presentation's license agreement from [EULA.rtf 📝](https://www.gemboxsoftware.com/EULA.rtf).
+
+
