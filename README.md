@@ -2,9 +2,10 @@
 
 ## What is GemBox.Presentation?
 
-GemBox.Presentation is a .NET component that enables you to read, write, edit, convert, and print PowerPoint presentations from your .NET applications using a straightforward API.
+GemBox.Presentation is a .NET component that enables you to read, write, convert, and print presentation files (PPTX, PPT, and PPSX) from .NET applications.
 
-With GemBox.Presentation, you get a fast and reliable component that's easy to use. It requires only the .NET, so you can deploy your application easily without considering other licenses. And it's up to 20 times faster than Microsoft PowerPoint automation!
+With GemBox.Presentation you get a fast and reliable component that’s easy to use and doesn't depend on Microsoft PowerPoint. It requires only .NET and it’s much faster than Microsoft Office Automation!
+
 
 ## GemBox.Presentation Features
 
