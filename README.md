@@ -54,7 +54,7 @@ For more GemBox.Presentation code examples and demos, please visit our [examples
 
 ## Installation
 
-You can download GemBox.Presentation from [BugFixes 🛠️](https://www.gemboxsoftware.com/presentation/downloads/bugfixes.html) or from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/).
+You can download GemBox.Presentation from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/) or from [BugFixes 🛠️](https://www.gemboxsoftware.com/presentation/downloads/bugfixes.html).
 
 ## Resources
 
