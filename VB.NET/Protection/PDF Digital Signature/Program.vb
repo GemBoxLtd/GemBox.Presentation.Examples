@@ -14,7 +14,7 @@ Module Program
 
     Sub PAdES_B_B()
 
-        ' If using Professional version, put your serial key below.
+        ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Dim presentation = PresentationDocument.Load("Reading.pptx")
@@ -42,7 +42,7 @@ Module Program
 
     Sub PAdES_B_LTA()
 
-        ' If using Professional version, put your serial key below.
+        ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Dim presentation = PresentationDocument.Load("Reading.pptx")
@@ -54,7 +54,7 @@ Module Program
                 PictureContentType.Png, stream, 25, 15, 4, 1, LengthUnit.Centimeter)
         End Using
 
-        ' If using Professional version, put your serial key below.
+        ' If using the Professional version, put your serial key below.
         GemBox.Pdf.ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         ' Get a digital ID from PKCS#12/PFX file.
