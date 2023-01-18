@@ -15,6 +15,9 @@ namespace PresentationCorePages
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            // Add compatibility switch.
+            AppContext.SetSwitch("Switch.System.Windows.Media.ShouldRenderEvenWhenNoDisplayDevicesAreAvailable", true);
         }
 
         public IConfiguration Configuration { get; }
