@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Uses", "Common Uses"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cloning", "Common Uses\Cloning\Cloning.csproj", "{05D4C538-66D7-40C8-B53B-12D1D5C52FA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convert", "Common Uses\Convert\Convert.csproj", "{02F165BE-7D1B-47E8-8C01-7CFF598CEA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertToPdf", "Common Uses\Convert to PDF\ConvertToPdf.csproj", "{02F165BE-7D1B-47E8-8C01-7CFF598CEA60}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindAndReplace", "Common Uses\Find And Replace\FindAndReplace.csproj", "{CEDAFD27-3D93-44D1-AA22-A82A4175FC2D}"
 EndProject
@@ -120,6 +120,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCorePages", "Platforms\ASP.NET Core\Razor Pages\AspNetCorePages.csproj", "{75091C42-D696-4CD6-BEAD-9C8D70C4DBEC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VbaMacros", "Advanced Features\VBA Macros\VbaMacros.csproj", "{0C2BBAAE-EE7E-41E1-9322-555E4BFE2447}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertToImage", "Common Uses\Convert to Image\ConvertToImage.csproj", "{93B2FEF7-19A7-4909-A324-68E856F44015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -323,6 +325,10 @@ Global
 		{0C2BBAAE-EE7E-41E1-9322-555E4BFE2447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C2BBAAE-EE7E-41E1-9322-555E4BFE2447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C2BBAAE-EE7E-41E1-9322-555E4BFE2447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B2FEF7-19A7-4909-A324-68E856F44015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B2FEF7-19A7-4909-A324-68E856F44015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B2FEF7-19A7-4909-A324-68E856F44015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B2FEF7-19A7-4909-A324-68E856F44015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -377,6 +383,7 @@ Global
 		{4E2000A3-485F-42BB-AB6A-4B3B2A97BB5A} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{75091C42-D696-4CD6-BEAD-9C8D70C4DBEC} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{0C2BBAAE-EE7E-41E1-9322-555E4BFE2447} = {56F875F8-120E-4E7C-AD77-FD0B7125CB23}
+		{93B2FEF7-19A7-4909-A324-68E856F44015} = {A0E462E1-6597-49A7-BD1C-D564A6571D59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F34EEBF-7AC8-442D-A2D9-07F070465929}
