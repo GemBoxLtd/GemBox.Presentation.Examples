@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="GemBox.Presentation" Version="*" />
+    <Reference Include="System.IO.Compression" Condition=" '$(TargetFramework)' == 'net48' " />
+    <PackageReference Include="System.IO.Compression" Condition=" '$(TargetFramework)' != 'net48' " Version="*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,6 +16,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Wildlife.wmv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Input Audio and Video.pptx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

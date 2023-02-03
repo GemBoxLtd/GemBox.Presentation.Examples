@@ -1,4 +1,6 @@
+using System.Linq;
 using System.IO;
+using System.IO.Compression;
 using GemBox.Presentation;
 using GemBox.Presentation.Media;
 
@@ -9,6 +11,12 @@ class Program
         // If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
+        Example1();
+        Example2();
+    }
+
+    static void Example1()
+    {
         var presentation = new PresentationDocument();
 
         // Create new presentation slide.
@@ -53,5 +61,52 @@ class Program
         video.Bookmarks.Add(TimeOffset.From(3000, TimeOffsetUnit.Millisecond));
 
         presentation.Save("Audio and Video.pptx");
+    }
+
+    static void Example2()
+    {
+        var presentation = PresentationDocument.Load("Input Audio and Video.pptx");
+        var slide = presentation.Slides[0];
+
+        // Get audios from first slide.
+        var audios = slide.Content.Drawings.All()
+            .OfType<Picture>()
+            .Where(p => p.Media?.MediaType == MediaType.Audio)
+            .Select(p => p.Media as AudioContent);
+
+        // Get videos from first slide.
+        var videos = slide.Content.Drawings.All()
+            .OfType<Picture>()
+            .Where(p => p.Media?.MediaType == MediaType.Video)
+            .Select(p => p.Media as VideoContent);
+
+        // Create a ZIP file for storing audio and video files.
+        using (var archiveStream = File.OpenWrite("Output.zip"))
+        using (var archive = new ZipArchive(archiveStream, ZipArchiveMode.Create))
+        {
+            int counter = 0;
+            foreach (var audio in audios)
+            {
+                string extension = audio.Content.ContentType.Replace("audio/", string.Empty);
+                var entry = archive.CreateEntry($"Audio {++counter}.{extension}");
+
+                // Export audio from PowerPoint file to the ZIP entry.
+                using (var entryStream = entry.Open())
+                using (var audioStream = audio.Content.Open())
+                    audioStream.CopyTo(entryStream);
+            }
+
+            counter = 0;
+            foreach (var video in videos)
+            {
+                string extension = video.Content.ContentType.Replace("video/", string.Empty);
+                var entry = archive.CreateEntry($"Video {++counter}.{extension}");
+
+                // Export video from PowerPoint file to the ZIP entry.
+                using (var entryStream = entry.Open())
+                using (var videoStream = video.Content.Open())
+                    videoStream.CopyTo(entryStream);
+            }
+        }
     }
 }

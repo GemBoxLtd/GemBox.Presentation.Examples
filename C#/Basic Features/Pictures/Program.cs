@@ -1,3 +1,4 @@
+using System.Linq;
 using System.IO;
 using GemBox.Presentation;
 
@@ -8,6 +9,13 @@ class Program
         // If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
+        Example1();
+        Example2();
+        Example3();
+    }
+
+    static void Example1()
+    {
         var presentation = new PresentationDocument();
 
         // Create new presentation slide.
@@ -37,6 +45,44 @@ class Program
         lineFormat.Fill.SetSolid(Color.FromName(ColorName.Red));
         lineFormat.Width = Length.From(0.2, LengthUnit.Centimeter);
 
+        // Create second picture from SVG resource.
+        using (var stream = File.OpenRead("Graphics1.svg"))
+            picture = slide.Content.AddPicture(PictureContentType.Svg, stream, 2, 8, 6, 3, LengthUnit.Centimeter);
+
         presentation.Save("Pictures.pptx");
+    }
+
+    static void Example2()
+    {
+        var presentation = PresentationDocument.Load("Input Pictures.pptx");
+        var slide = presentation.Slides[0];
+
+        // Get all pictures from first slide.
+        var pictures = slide.Content.Drawings.All().OfType<Picture>();
+
+        // Get first picture data.
+        Picture picture = pictures.First();
+        PictureContent pictureContent = picture.Fill.Data;
+
+        // Export picture data to image file.
+        using (var fileStream = File.Create($"Output.{pictureContent.ContentType}"))
+        using (var pictureStream = pictureContent.Content.Open())
+            pictureStream.CopyTo(fileStream);
+    }
+
+    static void Example3()
+    {
+        var presentation = PresentationDocument.Load("Input Pictures.pptx");
+        var slide = presentation.Slides[0];
+
+        // Get all pictures from first slide.
+        var pictures = slide.Content.Drawings.All().OfType<Picture>();
+
+        // Replace pictures data with image file.
+        foreach (var picture in pictures)
+            using (var fileStream = File.OpenRead("Jellyfish.jpg"))
+                picture.Fill.SetData(PictureContentType.Jpeg, fileStream);
+
+        presentation.Save("Updated Pictures.pptx");
     }
 }

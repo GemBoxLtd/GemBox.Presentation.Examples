@@ -1,3 +1,4 @@
+Imports System.Linq
 Imports System.IO
 Imports GemBox.Presentation
 
@@ -8,6 +9,13 @@ Module Program
         ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
+        Example1()
+        Example2()
+        Example3()
+
+    End Sub
+
+    Sub Example1()
         Dim presentation = New PresentationDocument
 
         ' Create New presentation slide.
@@ -38,6 +46,47 @@ Module Program
         lineFormat.Fill.SetSolid(Color.FromName(ColorName.Red))
         lineFormat.Width = Length.From(0.2, LengthUnit.Centimeter)
 
+        ' Create second picture from SVG resource.
+        Using stream As Stream = File.OpenRead("Graphics1.svg")
+            picture = slide.Content.AddPicture(PictureContentType.Svg, stream, 2, 8, 6, 3, LengthUnit.Centimeter)
+        End Using
+
         presentation.Save("Pictures.pptx")
+    End Sub
+
+    Sub Example2()
+        Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
+        Dim slide = presentation.Slides(0)
+
+        ' Get all pictures from first slide.
+        Dim pictures = slide.Content.Drawings.All().OfType(Of Picture)()
+
+        ' Get first picture data.
+        Dim picture As Picture = pictures.First()
+        Dim pictureContent As PictureContent = picture.Fill.Data
+
+        ' Export picture data to image file.
+        Using fileStream = File.Create($"Output.{pictureContent.ContentType}")
+            Using pictureStream = pictureContent.Content.Open()
+                pictureStream.CopyTo(fileStream)
+            End Using
+        End Using
+    End Sub
+
+    Sub Example3()
+        Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
+        Dim slide = presentation.Slides(0)
+
+        ' Get all pictures from first slide.
+        Dim pictures = slide.Content.Drawings.All().OfType(Of Picture)()
+
+        ' Replace pictures data with image file.
+        For Each picture In pictures
+            Using fileStream = File.OpenRead("Jellyfish.jpg")
+                picture.Fill.SetData(PictureContentType.Jpeg, fileStream)
+            End Using
+        Next
+
+        presentation.Save("Updated Pictures.pptx")
     End Sub
 End Module
