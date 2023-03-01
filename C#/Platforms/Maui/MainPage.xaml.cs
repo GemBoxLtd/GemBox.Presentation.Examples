@@ -14,7 +14,7 @@ namespace PresentationMaui
             InitializeComponent();
         }
 
-        private string CreatePresentation()
+        private async Task<string> CreatePresentationAsync()
         {
             var presentation = new PresentationDocument();
 
@@ -25,7 +25,7 @@ namespace PresentationMaui
 
             var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Example.pptx");
 
-            presentation.Save(filePath);
+            await Task.Run(() => presentation.Save(filePath));
 
             return filePath;
         }
@@ -35,9 +35,15 @@ namespace PresentationMaui
             button.IsEnabled = false;
             activity.IsRunning = true;
 
-            // In real apps the call to the method should be async (Task.Run(() => ....)
-            var filePath = CreatePresentation();
-            await Launcher.OpenAsync(new OpenFileRequest(Path.GetFileName(filePath), new ReadOnlyFile(filePath)));
+            try
+            {
+                var filePath = await CreatePresentationAsync();
+                await Launcher.OpenAsync(new OpenFileRequest(Path.GetFileName(filePath), new ReadOnlyFile(filePath)));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", ex.Message, "Close");
+            }
 
             activity.IsRunning = false;
             button.IsEnabled = true;
