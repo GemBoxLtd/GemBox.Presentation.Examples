@@ -123,7 +123,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VbaMacros", "Advanced Featu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertToImage", "Common Uses\Convert to Image\ConvertToImage.csproj", "{93B2FEF7-19A7-4909-A324-68E856F44015}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationMaui", "Platforms\Maui\PresentationMaui.csproj", "{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationMaui", "Platforms\MAUI\PresentationMaui.csproj", "{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
