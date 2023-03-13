@@ -1,0 +1,55 @@
+﻿@page "/"
+@inject IJSRuntime JS
+@using BlazorWebAssemblyApp.Data
+@using System.IO
+@using System.Reflection
+@using GemBox.Presentation
+
+<h1>Card generator [Blazor WebAssembly App]</h1>
+
+<EditForm Model="model" OnSubmit="CreatePresentation">
+    <div class="form-group">Top text: <InputTextArea @bind-Value="model.Top" class="form-control"></InputTextArea></div>
+    <div class="form-group">Middle text: <InputTextArea @bind-Value="model.Middle" class="form-control"></InputTextArea></div>
+    <div class="form-group">Bottom text: <InputTextArea @bind-Value="model.Bottom" class="form-control"></InputTextArea></div>
+    <div class="col-1" style="min-width:75px">Format:
+        <InputSelect @bind-Value="model.Format" class="form-control">
+            @foreach (string format in model.FormatMappingDictionary.Select(item => item.Key))
+            {
+                <option value="@format">@format</option>
+            }
+        </InputSelect>
+    </div>
+    <button class="btn btn-primary mt-2" type="submit">Create</button>
+</EditForm>
+
+@code {
+    private CardModel model = new();
+
+    private async Task CreatePresentation()
+    {
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+        // Add embedded resource fonts, required for saving to PDF.
+        FontSettings.FontsBaseResourceLocation = "/Fonts/";
+
+        // Load template presentation.
+        using var inputStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("BlazorWebAssemblyApp.CardWithPlaceholderTexts.pptx")!;
+        var presentation = PresentationDocument.Load(inputStream, LoadOptions.Pptx);
+
+        // Get first slide.
+        var slide = presentation.Slides[0];
+
+        // Execute find and replace operations.
+        slide.TextContent.Replace("{{Top Text}}", this.model.Top);
+        slide.TextContent.Replace("{{Middle Text}}", this.model.Middle);
+        slide.TextContent.Replace("{{Bottom Text}}", this.model.Bottom);
+
+        // Save presentation in specified file format.
+        using var outputStream = new MemoryStream();
+        presentation.Save(outputStream, this.model.Options);
+
+        // Download file.
+        using var streamRef = new DotNetStreamReference(outputStream);
+        await JS.InvokeVoidAsync("downloadFileFromStream", $"BlazorWebAssemblyOutput.{this.model.Format.ToLower()}", streamRef);
+    }
+}
