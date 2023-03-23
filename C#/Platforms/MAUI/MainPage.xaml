@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PresentationMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+            VerticalOptions="Center">
+
+            <Label Text="GemBox.Presentation Example"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               Margin="0,0,0,30" />
+
+            <Editor x:Name="text"
+                VerticalOptions="FillAndExpand"
+                Text="Hi! This presentation was generated with GemBox.Presentation library." />
+
+            <ActivityIndicator x:Name="activity" />
+
+            <Button x:Name="button"
+                Text="Create presentation"
+                Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
