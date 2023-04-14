@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hello World", "Hello World", "{F058351F-A0FE-4718-89F1-F8ADB9BAD3C8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getting Started", "Getting Started", "{F058351F-A0FE-4718-89F1-F8ADB9BAD3C8}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "HelloWorld", "Hello World\HelloWorld.vbproj", "{4BDC5A0A-5946-4D38-9756-A23A0A82279E}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "GettingStarted", "Getting Started\GettingStarted.vbproj", "{4BDC5A0A-5946-4D38-9756-A23A0A82279E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common Uses", "Common Uses", "{F859FD40-A22D-495D-8EDE-2DFF0BE5CFE4}"
 EndProject
