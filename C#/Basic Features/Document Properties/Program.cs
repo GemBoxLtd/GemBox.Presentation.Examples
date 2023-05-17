@@ -1,3 +1,4 @@
+using System;
 using GemBox.Presentation;
 
 class Program
@@ -8,47 +9,27 @@ class Program
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
         var presentation = PresentationDocument.Load("Reading.pptx");
+        var properties = presentation.DocumentProperties;
 
-        var slide = presentation.Slides[0];
+        Console.WriteLine("# Built-in document properties:");
 
-        slide.Content.Drawings.Clear();
+        // Write built-in document properties.
+        properties.BuiltIn[BuiltInDocumentProperty.Title] = "My Title";
+        properties.BuiltIn[BuiltInDocumentProperty.DateLastSaved] = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssZ");
 
-        // Create "Built-in document properties" text box.
-        var textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 0.5, 0.5, 12, 10, LengthUnit.Centimeter);
-        textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkBlue));
+        // Read built-in document properties.
+        foreach (var builtinProperty in properties.BuiltIn)
+            Console.WriteLine($"{builtinProperty.Key,20}: {builtinProperty.Value}");
 
-        var paragraph = textBox.AddParagraph();
-        paragraph.Format.Alignment = HorizontalAlignment.Left;
+        Console.WriteLine();
+        Console.WriteLine("# Custom document properties:");
 
-        var run = paragraph.AddRun("Built-in document properties:");
-        run.Format.Bold = true;
+        // Write custom document properties.
+        properties.Custom["My Custom Property 1"] = "My Custom Value";
+        properties.Custom["My Custom Property 2"] = 123.4;
 
-        paragraph.AddLineBreak();
-
-        foreach (var docProp in presentation.DocumentProperties.BuiltIn)
-        {
-            paragraph.AddRun(string.Format("{0}: {1}", docProp.Key, docProp.Value));
-            paragraph.AddLineBreak();
-        }
-
-        // Create "Custom document properties" text box.
-        textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 14, 0.5, 12, 10, LengthUnit.Centimeter);
-        textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkBlue));
-
-        paragraph = textBox.AddParagraph();
-        paragraph.Format.Alignment = HorizontalAlignment.Left;
-
-        run = paragraph.AddRun("Custom document properties:");
-        run.Format.Bold = true;
-
-        paragraph.AddLineBreak();
-
-        foreach (var docProp in presentation.DocumentProperties.Custom)
-        {
-            paragraph.AddRun(string.Format("{0}: {1} (Type: {2})", docProp.Key, docProp.Value, docProp.Value.GetType()));
-            paragraph.AddLineBreak();
-        }
-
-        presentation.Save("Document Properties.pptx");
+        // Read custom document properties.
+        foreach (var customProperty in properties.Custom)
+            Console.WriteLine($"{customProperty.Key,20}: {customProperty.Value,-20} [{customProperty.Value.GetType()}]");
     }
 }

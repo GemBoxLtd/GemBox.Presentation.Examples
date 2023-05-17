@@ -1,3 +1,4 @@
+Imports System
 Imports GemBox.Presentation
 
 Module Program
@@ -8,47 +9,30 @@ Module Program
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Dim presentation = PresentationDocument.Load("Reading.pptx")
+        Dim properties = presentation.DocumentProperties
 
-        Dim slide = presentation.Slides(0)
+        Console.WriteLine("# Built-in document properties:")
 
-        slide.Content.Drawings.Clear()
+        ' Write built-in document properties.
+        properties.BuiltIn(BuiltInDocumentProperty.Title) = "My Title"
+        properties.BuiltIn(BuiltInDocumentProperty.DateLastSaved) = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-        ' Create "Built-in document properties" text box.
-        Dim textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 0.5, 0.5, 12, 10, LengthUnit.Centimeter)
-        textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkBlue))
-
-        Dim paragraph = textBox.AddParagraph()
-        paragraph.Format.Alignment = HorizontalAlignment.Left
-
-        Dim run = paragraph.AddRun("Built-in document properties:")
-        run.Format.Bold = True
-
-        paragraph.AddLineBreak()
-
-        For Each docProp In presentation.DocumentProperties.BuiltIn
-
-            paragraph.AddRun(String.Format("{0}: {1}", docProp.Key, docProp.Value))
-            paragraph.AddLineBreak()
+        ' Read built-in document properties.
+        For Each builtinProperty In properties.BuiltIn
+            Console.WriteLine($"{builtinProperty.Key,20}: {builtinProperty.Value}")
         Next
 
-        ' Create "Custom document properties" text box.
-        textBox = slide.Content.AddTextBox(ShapeGeometryType.Rectangle, 14, 0.5, 12, 10, LengthUnit.Centimeter)
-        textBox.Shape.Format.Outline.Fill.SetSolid(Color.FromName(ColorName.DarkBlue))
+        Console.WriteLine()
+        Console.WriteLine("# Custom document properties:")
 
-        paragraph = textBox.AddParagraph()
-        paragraph.Format.Alignment = HorizontalAlignment.Left
+        ' Write custom document properties.
+        properties.Custom("My Custom Property 1") = "My Custom Value"
+        properties.Custom("My Custom Property 2") = 123.4
 
-        run = paragraph.AddRun("Custom document properties:")
-        run.Format.Bold = True
-
-        paragraph.AddLineBreak()
-
-        For Each docProp In presentation.DocumentProperties.Custom
-
-            paragraph.AddRun(String.Format("{0}: {1} (Type: {2})", docProp.Key, docProp.Value, docProp.Value.GetType()))
-            paragraph.AddLineBreak()
+        ' Read custom document properties.
+        For Each customProperty In properties.Custom
+            Console.WriteLine($"{customProperty.Key,20}: {customProperty.Value,-20} [{customProperty.Value.GetType()}]")
         Next
 
-        presentation.Save("Document Properties.pptx")
     End Sub
 End Module
