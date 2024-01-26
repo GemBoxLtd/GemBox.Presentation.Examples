@@ -129,6 +129,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebAssemblyApp", "Pla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationMaui", "Platforms\MAUI\PresentationMaui.csproj", "{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListFormatting", "Formatting\List Formatting\ListFormatting.csproj", "{084FB690-8695-426A-B613-CB28DE8954B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -349,6 +351,10 @@ Global
 		{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{084FB690-8695-426A-B613-CB28DE8954B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084FB690-8695-426A-B613-CB28DE8954B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084FB690-8695-426A-B613-CB28DE8954B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084FB690-8695-426A-B613-CB28DE8954B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -407,6 +413,7 @@ Global
 		{8CB4427C-0BC8-4A7B-AAE5-1B2B819AA491} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{5F29352F-4E63-4A70-8770-D630B6622AB0} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
+		{084FB690-8695-426A-B613-CB28DE8954B8} = {90BE278C-5C4D-46F5-B739-D1DEC4F343CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F34EEBF-7AC8-442D-A2D9-07F070465929}

@@ -9,7 +9,9 @@ class Program
 
         var presentation = new PresentationDocument();
 
-        // Sets the base directory path where component looks for fonts.
+        // Set the directory path where the component will look for additional font files.
+        // The "." targets the current directory, so besides the installed fonts,
+        // the component will be able to use the fonts within the specified directory.
         FontSettings.FontsBaseDirectory = ".";
 
         var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);

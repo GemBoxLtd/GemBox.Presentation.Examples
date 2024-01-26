@@ -80,12 +80,13 @@ namespace PresentationCoreMvc.Models
         {
             ["PPTX"] = new PptxSaveOptions(),
             ["PDF"] = new PdfSaveOptions(),
-            ["XPS"] = new XpsSaveOptions(),
+            ["XPS"] = new XpsSaveOptions(), // XPS is supported only on Windows.
             ["BMP"] = new ImageSaveOptions(ImageSaveFormat.Bmp),
             ["PNG"] = new ImageSaveOptions(ImageSaveFormat.Png),
             ["JPG"] = new ImageSaveOptions(ImageSaveFormat.Jpeg),
             ["GIF"] = new ImageSaveOptions(ImageSaveFormat.Gif),
-            ["TIF"] = new ImageSaveOptions(ImageSaveFormat.Tiff)
+            ["TIF"] = new ImageSaveOptions(ImageSaveFormat.Tiff),
+            ["SVG"] = new ImageSaveOptions(ImageSaveFormat.Svg)
         };
     }
 }
