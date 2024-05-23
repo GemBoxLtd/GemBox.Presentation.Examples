@@ -119,6 +119,8 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ConvertToImage", "Common Us
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "ListFormatting", "Formatting\List Formatting\ListFormatting.vbproj", "{116E6436-BBCA-47EC-943E-01E80E0B8D35}"
 EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LoadHtml", "Common Uses\Load HTML\LoadHtml.vbproj", "{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -317,6 +319,10 @@ Global
 		{116E6436-BBCA-47EC-943E-01E80E0B8D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{116E6436-BBCA-47EC-943E-01E80E0B8D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{116E6436-BBCA-47EC-943E-01E80E0B8D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -370,6 +376,7 @@ Global
 		{961A20F3-6027-4DB9-8157-B966B3C211E5} = {0B0F00DE-F335-4B8B-A904-C4662DC7D19A}
 		{99D368FA-736B-435A-BAB4-15A6AFD6648A} = {F859FD40-A22D-495D-8EDE-2DFF0BE5CFE4}
 		{116E6436-BBCA-47EC-943E-01E80E0B8D35} = {F3B41751-5741-40DC-BB55-23C8E8C442B6}
+		{337CA8BE-1DCA-48B1-B7E0-8AB846CFE7B8} = {F859FD40-A22D-495D-8EDE-2DFF0BE5CFE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {763097D6-878C-4309-923F-F011E62FF47A}

@@ -5,15 +5,15 @@ class Program
 {
     static void Main()
     {
-        // If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-
         Example1();
         Example2();
     }
 
     static void Example1()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = PresentationDocument.Load("Reading.pptx");
 
         var saveOptions = new PptxSaveOptions();
@@ -28,6 +28,9 @@ class Program
 
     static void Example2()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = PresentationDocument.Load("Reading.pptx");
 
         var signature1 = new PptxDigitalSignatureSaveOptions()

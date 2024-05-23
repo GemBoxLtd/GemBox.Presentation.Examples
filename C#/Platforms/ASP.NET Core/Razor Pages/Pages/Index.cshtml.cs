@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.IO;
+using GemBox.Presentation;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PresentationCorePages.Models;
-using GemBox.Presentation;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.IO;
 
 namespace PresentationCorePages.Pages
 {
@@ -16,13 +16,13 @@ namespace PresentationCorePages.Pages
         [BindProperty]
         public CardModel Card { get; set; }
 
+        // If using the Professional version, put your serial key below.
+        static IndexModel() => ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         public IndexModel(IWebHostEnvironment environment)
         {
             this.environment = environment;
             this.Card = new CardModel();
-
-            // If using the Professional version, put your serial key below.
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
         }
 
         public void OnGet() { }

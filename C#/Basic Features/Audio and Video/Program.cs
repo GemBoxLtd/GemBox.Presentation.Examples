@@ -1,22 +1,22 @@
-using System.Linq;
-using System.IO;
-using System.IO.Compression;
 using GemBox.Presentation;
 using GemBox.Presentation.Media;
+using System.IO;
+using System.IO.Compression;
+using System.Linq;
 
 class Program
 {
     static void Main()
     {
-        // If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-
         Example1();
         Example2();
     }
 
     static void Example1()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = new PresentationDocument();
 
         // Create new presentation slide.
@@ -65,6 +65,9 @@ class Program
 
     static void Example2()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = PresentationDocument.Load("Input Audio and Video.pptx");
         var slide = presentation.Slides[0];
 

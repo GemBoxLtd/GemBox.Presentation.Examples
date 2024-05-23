@@ -131,6 +131,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationMaui", "Platfor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListFormatting", "Formatting\List Formatting\ListFormatting.csproj", "{084FB690-8695-426A-B613-CB28DE8954B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadHtml", "Common Uses\Load HTML\LoadHtml.csproj", "{9BBE86E0-3722-4709-A75D-BC42B27A77DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -355,6 +357,10 @@ Global
 		{084FB690-8695-426A-B613-CB28DE8954B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{084FB690-8695-426A-B613-CB28DE8954B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{084FB690-8695-426A-B613-CB28DE8954B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBE86E0-3722-4709-A75D-BC42B27A77DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBE86E0-3722-4709-A75D-BC42B27A77DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBE86E0-3722-4709-A75D-BC42B27A77DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBE86E0-3722-4709-A75D-BC42B27A77DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -414,6 +420,7 @@ Global
 		{5F29352F-4E63-4A70-8770-D630B6622AB0} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{4C8880EF-7107-4DA7-ADCF-D4BAAEEB501E} = {520EFB9C-72BA-4241-90D7-3D08C77A4F37}
 		{084FB690-8695-426A-B613-CB28DE8954B8} = {90BE278C-5C4D-46F5-B739-D1DEC4F343CA}
+		{9BBE86E0-3722-4709-A75D-BC42B27A77DF} = {A0E462E1-6597-49A7-BD1C-D564A6571D59}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F34EEBF-7AC8-442D-A2D9-07F070465929}

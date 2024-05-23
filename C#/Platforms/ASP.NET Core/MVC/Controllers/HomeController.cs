@@ -1,11 +1,11 @@
+using GemBox.Presentation;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using PresentationCoreMvc.Models;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.IO;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using PresentationCoreMvc.Models;
-using GemBox.Presentation;
 using System.Linq;
 
 namespace PresentationCoreMvc.Controllers
@@ -14,18 +14,12 @@ namespace PresentationCoreMvc.Controllers
     {
         private readonly IWebHostEnvironment environment;
 
-        public HomeController(IWebHostEnvironment environment)
-        {
-            this.environment = environment;
+        // If using the Professional version, put your serial key below.
+        static HomeController() => ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-            // If using the Professional version, put your serial key below.
-            ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-        }
+        public HomeController(IWebHostEnvironment environment) => this.environment = environment;
 
-        public IActionResult Index()
-        {
-            return View(new CardModel());
-        }
+        public IActionResult Index() => this.View(new CardModel());
 
         public FileStreamResult Download(CardModel model)
         {
@@ -57,10 +51,8 @@ namespace PresentationCoreMvc.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel() { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        public IActionResult Error() =>
+            this.View(new ErrorViewModel() { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
 

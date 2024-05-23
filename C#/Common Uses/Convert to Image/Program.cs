@@ -1,14 +1,11 @@
+using GemBox.Presentation;
 using System.IO;
 using System.IO.Compression;
-using GemBox.Presentation;
 
 class Program
 {
     static void Main()
     {
-        // If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-
         Example1();
         Example2();
         Example3();
@@ -16,6 +13,9 @@ class Program
 
     static void Example1()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         // Load a PowerPoint file into the PresentationDocument object.
         var presentation = PresentationDocument.Load("Input.pptx");
         
@@ -32,6 +32,9 @@ class Program
 
     static void Example2()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         // Load a PowerPoint file.
         var presentation = PresentationDocument.Load("Input.pptx");
 
@@ -47,6 +50,9 @@ class Program
 
     static void Example3()
     {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
         // Load a PowerPoint file.
         var presentation = PresentationDocument.Load("Input.pptx");
 

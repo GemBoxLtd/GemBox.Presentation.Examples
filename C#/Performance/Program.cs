@@ -1,51 +1,58 @@
-using System;
-using System.Diagnostics;
-using System.Linq;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Engines;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Running;
 using GemBox.Presentation;
+using System.Collections.Generic;
+using System.IO;
 
-class Program
+[SimpleJob(RuntimeMoniker.Net80)]
+[SimpleJob(RuntimeMoniker.Net48)]
+public class Program
 {
-    static void Main()
+    private PresentationDocument presentation;
+    private readonly Consumer consumer = new Consumer();
+
+    public static void Main()
+    {
+        BenchmarkRunner.Run<Program>();
+    }
+
+    [GlobalSetup]
+    public void SetLicense()
     {
         // If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        // If example exceeds Free version limitations then continue as trial version: 
-        // https://www.gemboxsoftware.com/Presentation/help/html/Evaluation_and_Licensing.htm
-        ComponentInfo.FreeLimitReached += (sender, e) => e.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial;
+        // If using Free version and example exceeds its limitations, use Trial or Time Limited version:
+        // https://www.gemboxsoftware.com/presentation/examples/free-trial-professional/901
 
-        Console.WriteLine("Performance example:");
-        Console.WriteLine();
+        this.presentation = PresentationDocument.Load("RandomSlides.pptx");
+    }
 
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
+    [Benchmark]
+    public PresentationDocument Reading()
+    {
+        return PresentationDocument.Load("RandomSlides.pptx");
+    }
 
-        var presentation = PresentationDocument.Load("Template.pptx", LoadOptions.Pptx);
+    [Benchmark]
+    public void Writing()
+    {
+        using (var stream = new MemoryStream())
+            this.presentation.Save(stream, new PptxSaveOptions());
+    }
 
-        Console.WriteLine("Load file (seconds): " + stopwatch.Elapsed.TotalSeconds);
+    [Benchmark]
+    public void Iterating()
+    {
+        this.LoopThroughAllDrawings().Consume(this.consumer);
+    }
 
-        stopwatch.Reset();
-        stopwatch.Start();
-
-        int numberOfShapes = 0;
-        int numberOfParagraphs = 0;
-
-        foreach (var slide in presentation.Slides)
-            foreach (var shape in slide.Content.Drawings.OfType<Shape>())
-            {
-                foreach (var paragraph in shape.Text.Paragraphs)
-                    ++numberOfParagraphs;
-
-                ++numberOfShapes;
-            }
-
-        Console.WriteLine("Iterate through " + numberOfShapes + " shapes and " + numberOfParagraphs + " paragraphs (seconds): " + stopwatch.Elapsed.TotalSeconds);
-
-        stopwatch.Reset();
-        stopwatch.Start();
-
-        presentation.Save("Report.pptx");
-
-        Console.WriteLine("Save file (seconds): " + stopwatch.Elapsed.TotalSeconds);
+    public IEnumerable<Drawing> LoopThroughAllDrawings()
+    {
+        foreach (var slide in this.presentation.Slides)
+            foreach (var drawing in slide.Content.Drawings.All())
+                yield return drawing;
     }
 }

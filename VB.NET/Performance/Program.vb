@@ -1,53 +1,56 @@
-Imports System
-Imports System.Diagnostics
-Imports System.Linq
+Imports System.Collections.Generic
+Imports System.IO
+Imports BenchmarkDotNet.Attributes
+Imports BenchmarkDotNet.Engines
+Imports BenchmarkDotNet.Jobs
+Imports BenchmarkDotNet.Running
 Imports GemBox.Presentation
 
-Module Program
+<SimpleJob(RuntimeMoniker.Net80)>
+<SimpleJob(RuntimeMoniker.Net48)>
+Public Class Program
 
-    Sub Main()
+    Private presentation As PresentationDocument
+    Private ReadOnly consumer As Consumer = New Consumer()
 
+    Public Shared Sub Main()
+        BenchmarkRunner.Run(Of Program)()
+    End Sub
+
+    <GlobalSetup>
+    Public Sub SetLicense()
         ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
-        ' If example exceeds Free version limitations then continue as trial version: 
-        ' https://www.gemboxsoftware.com/Presentation/help/html/Evaluation_and_Licensing.htm
-        AddHandler ComponentInfo.FreeLimitReached, Sub(sender, e) e.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial
+        ' If using Free version and example exceeds its limitations, use Trial or Time Limited version:
+        ' https://www.gemboxsoftware.com/presentation/examples/free-trial-professional/901
 
-        Console.WriteLine("Performance example:")
-        Console.WriteLine()
+        Me.presentation = PresentationDocument.Load("RandomSlides.pptx")
+    End Sub
 
-        Dim stopwatch = New Stopwatch()
-        stopwatch.Start()
+    <Benchmark>
+    Public Function Reading() As PresentationDocument
+        Return PresentationDocument.Load("RandomSlides.pptx")
+    End Function
 
-        Dim presentation = PresentationDocument.Load("Template.pptx", LoadOptions.Pptx)
+    <Benchmark>
+    Public Sub Writing()
+        Using stream = New MemoryStream()
+            Me.presentation.Save(stream, New PptxSaveOptions())
+        End Using
+    End Sub
 
-        Console.WriteLine("Load file (seconds): " & stopwatch.Elapsed.TotalSeconds)
+    <Benchmark>
+    Public Sub Iterating()
+        Me.LoopThroughAllDrawings().Consume(Me.consumer)
+    End Sub
 
-        stopwatch.Reset()
-        stopwatch.Start()
-
-        Dim numberOfShapes As Integer = 0
-        Dim numberOfParagraphs As Integer = 0
-
-        For Each slide In presentation.Slides
-            For Each shape In slide.Content.Drawings.OfType(Of Shape)
-
-                For Each paragraph In shape.Text.Paragraphs
-                    numberOfParagraphs += 1
-                Next
-
-                numberOfShapes += 1
+    Public Iterator Function LoopThroughAllDrawings() As IEnumerable(Of Object)
+        For Each slide In Me.presentation.Slides
+            For Each drawing In slide.Content.Drawings.All()
+                Yield drawing
             Next
         Next
+    End Function
 
-        Console.WriteLine("Iterate through " & numberOfShapes & " shapes and " & numberOfParagraphs & " paragraphs (seconds): " & stopwatch.Elapsed.TotalSeconds)
-
-        stopwatch.Reset()
-        stopwatch.Start()
-
-        presentation.Save("Report.pptx")
-
-        Console.WriteLine("Save file (seconds): " & stopwatch.Elapsed.TotalSeconds)
-    End Sub
-End Module
+End Class
