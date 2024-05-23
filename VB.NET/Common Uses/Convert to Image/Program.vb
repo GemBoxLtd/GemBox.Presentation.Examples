@@ -1,13 +1,10 @@
+Imports GemBox.Presentation
 Imports System.IO
 Imports System.IO.Compression
-Imports GemBox.Presentation
 
 Module Program
 
     Sub Main()
-
-        ' If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Example1()
         Example2()
@@ -16,6 +13,9 @@ Module Program
     End Sub
 
     Sub Example1()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         ' Load a PowerPoint file into the PresentationDocument object.
         Dim presentation = PresentationDocument.Load("Input.pptx")
 
@@ -31,6 +31,9 @@ Module Program
     End Sub
 
     Sub Example2()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         ' Load a PowerPoint file.
         Dim presentation = PresentationDocument.Load("Input.pptx")
 
@@ -45,6 +48,9 @@ Module Program
     End Sub
 
     Sub Example3()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         ' Load a PowerPoint file.
         Dim presentation = PresentationDocument.Load("Input.pptx")
 

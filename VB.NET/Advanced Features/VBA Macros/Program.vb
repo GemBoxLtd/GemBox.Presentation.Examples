@@ -5,15 +5,15 @@ Module Program
 
     Sub Main()
 
-        ' If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
-
         Example1()
         Example2()
 
     End Sub
 
     Sub Example1()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         Dim presentation As New PresentationDocument()
         presentation.Slides.AddNew(SlideLayoutType.Custom)
 
@@ -29,6 +29,9 @@ End Sub"
     End Sub
 
     Sub Example2()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         Dim presentation = PresentationDocument.Load("SampleVba.pptm")
 
         ' Get the module.

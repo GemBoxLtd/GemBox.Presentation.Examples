@@ -4,9 +4,6 @@ Module Program
 
     Sub Main()
 
-        ' If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
-
         Example1()
         Example2()
 

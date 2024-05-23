@@ -1,13 +1,10 @@
-Imports System.Linq
-Imports System.IO
 Imports GemBox.Presentation
+Imports System.IO
+Imports System.Linq
 
 Module Program
 
     Sub Main()
-
-        ' If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Example1()
         Example2()
@@ -16,6 +13,9 @@ Module Program
     End Sub
 
     Sub Example1()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         Dim presentation = New PresentationDocument
 
         ' Create New presentation slide.
@@ -55,6 +55,9 @@ Module Program
     End Sub
 
     Sub Example2()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
         Dim slide = presentation.Slides(0)
 
@@ -74,6 +77,9 @@ Module Program
     End Sub
 
     Sub Example3()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
         Dim slide = presentation.Slides(0)
 

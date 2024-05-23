@@ -1,12 +1,9 @@
-Imports System.IO
 Imports GemBox.Presentation
+Imports System.IO
 
 Module Program
 
     Sub Main()
-
-        ' If using the Professional version, put your serial key below.
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
         Example1()
         Example2()
@@ -14,6 +11,9 @@ Module Program
     End Sub
 
     Sub Example1()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         ' Load input HTML file.
         Dim html As String = File.ReadAllText("Input.html")
 
@@ -30,6 +30,9 @@ Module Program
     End Sub
 
     Sub Example2()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
         ' HTML content.
         Dim html As String =
 "<h2>Ordered list example</h2>
