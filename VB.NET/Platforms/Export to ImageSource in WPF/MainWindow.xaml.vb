@@ -1,6 +1,6 @@
+Imports GemBox.Presentation
 Imports System.Windows
 Imports System.Windows.Controls
-Imports GemBox.Presentation
 
 Class MainWindow
 

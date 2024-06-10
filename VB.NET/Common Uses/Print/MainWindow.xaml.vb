@@ -1,8 +1,8 @@
+Imports GemBox.Presentation
+Imports Microsoft.Win32
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Xps.Packaging
-Imports GemBox.Presentation
-Imports Microsoft.Win32
 
 Partial Public Class MainWindow
     Inherits Window

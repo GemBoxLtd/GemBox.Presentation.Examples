@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using GemBox.Presentation;
+using System.Collections.Generic;
 
 namespace BlazorServerApp.Data
 {
@@ -14,7 +14,7 @@ namespace BlazorServerApp.Data
         {
             ["PPTX"] = new PptxSaveOptions(),
             ["PDF"] = new PdfSaveOptions(),
-            ["XPS"] = new XpsSaveOptions(),
+            ["XPS"] = new XpsSaveOptions(), // XPS is supported only on Windows.
             ["PNG"] = new ImageSaveOptions(ImageSaveFormat.Png),
             ["JPG"] = new ImageSaveOptions(ImageSaveFormat.Jpeg),
             ["BMP"] = new ImageSaveOptions(ImageSaveFormat.Bmp),

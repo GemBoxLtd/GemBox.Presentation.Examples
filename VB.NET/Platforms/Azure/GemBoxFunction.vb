@@ -1,9 +1,9 @@
+Imports GemBox.Presentation
+Imports Microsoft.Azure.Functions.Worker
+Imports Microsoft.Azure.Functions.Worker.Http
 Imports System.IO
 Imports System.Net
 Imports System.Threading.Tasks
-Imports Microsoft.Azure.Functions.Worker
-Imports Microsoft.Azure.Functions.Worker.Http
-Imports GemBox.Presentation
 
 Public Class GemBoxFunction
     <[Function]("GemBoxFunction")>
