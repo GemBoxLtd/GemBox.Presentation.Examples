@@ -18,5 +18,6 @@ class Program
         paragraph.AddRun("Hello World!");
 
         presentation.Save("Output.pptx");
+        presentation.Save("Output.pdf");
     }
 }

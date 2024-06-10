@@ -7,6 +7,7 @@ class Program
     {
         Example1();
         Example2();
+        Example3();
     }
 
     static void Example1()
@@ -58,5 +59,17 @@ class Program
         saveOptions.DigitalSignatures.Add(signature2);
 
         presentation.Save("PPTX Digital Signatures.pptx", saveOptions);
+    }
+
+    static void Example3()
+    {
+        // If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+        // Load signed presentation file.
+        var presentation = PresentationDocument.Load("Signed.pptx");
+
+        // Signature is removed by simply saving the presentation with default save options.
+        presentation.Save("Unsigned.pptx");
     }
 }

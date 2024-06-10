@@ -1,18 +1,17 @@
+using GemBox.Presentation;
 using System;
 using System.Data;
 using System.IO;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using GemBox.Presentation;
 
 public partial class Index : Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-        ComponentInfo.FreeLimitReached += (s1, e1) => e1.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial;
         
-        // By specifying a location that is under ASP.NET application's control, 
+        // By specifying a location that is under ASP.NET application's control,
         // GemBox.Presentation can retrieve font data when saving to PDF, even in Medium Trust environment.
         FontSettings.FontsBaseDirectory = Server.MapPath("Fonts/");
 

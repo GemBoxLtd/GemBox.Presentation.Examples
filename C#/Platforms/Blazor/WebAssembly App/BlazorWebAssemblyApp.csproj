@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.3" PrivateAssets="all" />
   </ItemGroup>
 
+  <!-- Add HarfBuzzSharp and SkiaSharp native assets. -->
   <ItemGroup>
     <PackageReference Include="HarfBuzzSharp.NativeAssets.WebAssembly" Version="2.8.2.3" />
     <NativeFileReference Include="$(HarfBuzzSharpStaticLibraryPath)\3.1.12\*.a" />
@@ -19,6 +20,7 @@
     <NativeFileReference Include="$(SkiaSharpStaticLibraryPath)\3.1.12\*.a" />
   </ItemGroup>
 
+  <!-- Add Calibri, Georgia, and Segoe UI Emoji embedded fonts. -->
   <ItemGroup>
     <EmbeddedResource Include="Fonts\calibri.ttf" />
     <EmbeddedResource Include="Fonts\georgia.ttf" />

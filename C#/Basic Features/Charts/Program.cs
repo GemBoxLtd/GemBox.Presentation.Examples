@@ -13,15 +13,6 @@ class Program
 {
     static void Main()
     {
-        // If using the Professional version, put your GemBox.Presentation serial key below.
-        GemBox.Presentation.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-
-        // If using the Professional version, put your GemBox.Spreadsheet serial key below.
-        SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-
-        // If using the Professional version, put your GemBox.Pdf serial key below.
-        GemBox.Pdf.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
-
         Example1();
         Example2();
         Example3();
@@ -30,6 +21,12 @@ class Program
 
     static void Example1()
     {
+        // If using the Professional version, put your GemBox.Presentation serial key below.
+        GemBox.Presentation.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+        // If using the Professional version, put your GemBox.Spreadsheet serial key below.
+        GemBox.Spreadsheet.SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = new PresentationDocument();
 
         // Add new PowerPoint presentation slide.
@@ -70,6 +67,12 @@ class Program
 
     static void Example2()
     {
+        // If using the Professional version, put your GemBox.Presentation serial key below.
+        GemBox.Presentation.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+        // If using the Professional version, put your GemBox.Spreadsheet serial key below.
+        GemBox.Spreadsheet.SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+
         // Load input file and save it in selected output format
         var presentation = PresentationDocument.Load("Chart.pptx");
 
@@ -95,6 +98,12 @@ class Program
 
     static void Example3()
     {
+        // If using the Professional version, put your GemBox.Presentation serial key below.
+        GemBox.Presentation.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+
+        // If using the Professional version, put your GemBox.Spreadsheet serial key below.
+        GemBox.Spreadsheet.SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = new PresentationDocument();
         var slide = presentation.Slides.AddNew(SlideLayoutType.Custom);
         var chart = slide.Content.AddChart(GemBox.Presentation.ChartType.Column,
@@ -116,6 +125,11 @@ class Program
 
     static void Example4()
     {
+        // If using the Professional versions, put your serial keys below.
+        GemBox.Presentation.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+        GemBox.Pdf.ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+        GemBox.Spreadsheet.SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+
         var presentation = PresentationDocument.Load("Chart.pptx");
         var placeholdersMapping = ReplaceChartsWithPlaceholders(presentation);
         presentation.Save("Chart.pdf");

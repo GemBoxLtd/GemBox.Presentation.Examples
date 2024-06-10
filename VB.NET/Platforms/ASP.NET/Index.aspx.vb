@@ -1,18 +1,17 @@
+Imports GemBox.Presentation
 Imports System
 Imports System.Data
 Imports System.IO
 Imports System.Web.UI
 Imports System.Web.UI.WebControls
-Imports GemBox.Presentation
 
 Partial Public Class Index
     Inherits Page
     Protected Sub Page_Load(sender As Object, e As EventArgs)
 
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
-        AddHandler ComponentInfo.FreeLimitReached, Sub(s1, e1) e1.FreeLimitReachedAction = FreeLimitReachedAction.ContinueAsTrial
 
-        ' By specifying a location that Is under ASP.NET application's control, 
+        ' By specifying a location that Is under ASP.NET application's control,
         ' GemBox.Presentation can retrieve font data when saving to PDF, even in Medium Trust environment.
         FontSettings.FontsBaseDirectory = Server.MapPath("Fonts/")
 

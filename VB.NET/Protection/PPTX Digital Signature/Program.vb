@@ -4,10 +4,9 @@ Imports GemBox.Presentation.Security
 Module Program
 
     Sub Main()
-
         Example1()
         Example2()
-
+        Example3()
     End Sub
 
     Sub Example1()
@@ -58,4 +57,16 @@ Module Program
 
         presentation.Save("PPTX Digital Signatures.pptx", saveOptions)
     End Sub
+
+    Sub Example3()
+        ' If using the Professional version, put your serial key below.
+        ComponentInfo.SetLicense("FREE-LIMITED-KEY")
+
+        ' Load signed presentation file.
+        Dim presentation = PresentationDocument.Load("Signed.pptx")
+
+        ' Signature is removed by simply saving the presentation with default save options.
+        presentation.Save("Unsigned.pptx")
+    End Sub
+
 End Module
