@@ -1,17 +1,19 @@
-# Create ComHelper object and set license.
-# NOTE: If you're using a Professional version you'll need to put your serial key below.
+import os
 import win32com.client as COM
+
+# Create ComHelper object.
 comHelper = COM.Dispatch("GemBox.Presentation.ComHelper")
+
+# If using the Professional version, put your serial key below.
 comHelper.ComSetLicense("FREE-LIMITED-KEY")
 
-# Load input presentation.
-import os
-presentation = comHelper.Load(os.getcwd() + "\\ComTemplate.pptx")
+# Read input presentation.
+presentation = comHelper.Load(os.getcwd() + "\\Input.pptx")
 
-# Get first slide in the presentation.
+# Get first slide.
 slide = comHelper.GetCollectionItem(presentation.Slides, 0)
 
-# Remove first drawing from the first slide.
+# Remove first drawing.
 comHelper.RemoveCollectionItemAt(slide.Content.Drawings, 0)
 
 # Get master slide.
@@ -20,22 +22,20 @@ masterSlide = comHelper.GetCollectionItem(presentation.MasterSlides, 0)
 # Get layout slide.
 layoutSlide = comHelper.GetCollectionItem(masterSlide.LayoutSlides, 0)
 
-# Add new slide to the presentation.
+# Create new slide.
 slide = comHelper.AddNewSlide(presentation.Slides, layoutSlide)
 
-# Add new shape to the new slide.
-shape = slide.Content.AddShape(ShapeGeometryType.RoundedRectangle, 2, 2, 8, 4)
+# Create new shape.
+shape = slide.Content.AddShape(ShapeGeometryType.RoundedRectangle, 5, 5, 12, 6)
 
-# Set shape fill to solid blue color.
-shape.Format.Fill.SetSolid(comHelper.CreateColor(0, 0, 255))
+# Set shape fill to light blue color.
+shape.Format.Fill.SetSolid(comHelper.CreateColor(91, 155, 213))
 
-# Add new paragraph with text.
-run = shape.Text.AddParagraph().AddRun("This example shows how to create a new PowerPoint slide with GemBox.Presentation in COM.")
+# Create new paragraph with text.
+run = shape.Text.AddParagraph().AddRun("This is a new text box on a new slide.")
 
-# Set text fill to solid white color.
+# Set text fill to white color.
 run.Format.Fill.SetSolid(comHelper.CreateColor(255, 255, 255))
 
-# Get output path and save presentation as PDF file.
-path = os.getcwd()  + "\\ComExample.pdf"
-presentation.Save(path)
-print("Presentation saved as '" + path + "'")
+# Write output presentation.
+presentation.Save(s.getcwd()  + "\\Output.pptx")
