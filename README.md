@@ -23,7 +23,7 @@ With GemBox.Presentation you get a fast and reliable component that’s easy to 
 - Get, create or edit [table](https://www.gemboxsoftware.com/presentation/examples/powerpoint-table-styles/603) styles.
 - Get and set [built-in and custom presentation properties](https://www.gemboxsoftware.com/presentation/examples/powerpoint-properties/410).
 - Load [HTML](https://www.gemboxsoftware.com/presentation/examples/powerpoint-load-html/208) content into presentations.
-- Access or modify [slide size](xref:GemBox.Presentation.PresentationDocument.SlideSize), [slide transition](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slide-transition/501), [slide show](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slideshow/502), [macros](https://www.gemboxsoftware.com/presentation/examples/vba-macros/506), and more.
+- Access or modify [slide size](https://www.gemboxsoftware.com/presentation/docs/GemBox.Presentation.PresentationDocument.html#GemBox_Presentation_PresentationDocument_SlideSize), [slide transition](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slide-transition/501), [slide show](https://www.gemboxsoftware.com/presentation/examples/powerpoint-slideshow/502), [macros](https://www.gemboxsoftware.com/presentation/examples/vba-macros/506), and more.
 - [Specify fonts location](https://www.gemboxsoftware.com/presentation/examples/private-fonts/503) when exporting to PDF, XPS, or image formats.
 - [Preserve](https://www.gemboxsoftware.com/presentation/examples/powerpoint-preservation/701) unsupported presentation content elements and properties when reading a presentation.
 - [Medium trust](https://www.gemboxsoftware.com/presentation/examples/asp-net-powerpoint-export/1601) support.
