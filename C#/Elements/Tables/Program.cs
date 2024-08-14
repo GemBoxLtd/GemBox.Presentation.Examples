@@ -95,7 +95,7 @@ class Program
             | TableStyleOptions.BandedRows;
 
         // Create new table style.
-        var myStyle = TableStyleCollection.Create("My Table Styles");
+        var myStyle = presentation.TableStyles.Create("My Table Styles");
 
         // Get "WholeTable" part style.
         var partStyle = myStyle[TablePartStyleType.WholeTable];
