@@ -5,11 +5,9 @@ Imports System.Linq
 Module Program
 
     Sub Main()
-
         Example1()
         Example2()
         Example3()
-
     End Sub
 
     Sub Example1()
@@ -58,7 +56,7 @@ Module Program
         ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
-        Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
+        Dim presentation = PresentationDocument.Load("InputPictures.pptx")
         Dim slide = presentation.Slides(0)
 
         ' Get all pictures from first slide.
@@ -80,7 +78,7 @@ Module Program
         ' If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
-        Dim presentation = PresentationDocument.Load("Input Pictures.pptx")
+        Dim presentation = PresentationDocument.Load("InputPictures.pptx")
         Dim slide = presentation.Slides(0)
 
         ' Get all pictures from first slide.
@@ -93,6 +91,6 @@ Module Program
             End Using
         Next
 
-        presentation.Save("Updated Pictures.pptx")
+        presentation.Save("UpdatedPictures.pptx")
     End Sub
 End Module

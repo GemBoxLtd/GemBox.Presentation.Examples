@@ -57,7 +57,7 @@ class Program
         // If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        var presentation = PresentationDocument.Load("Input Pictures.pptx");
+        var presentation = PresentationDocument.Load("InputPictures.pptx");
         var slide = presentation.Slides[0];
 
         // Get all pictures from first slide.
@@ -78,7 +78,7 @@ class Program
         // If using the Professional version, put your serial key below.
         ComponentInfo.SetLicense("FREE-LIMITED-KEY");
 
-        var presentation = PresentationDocument.Load("Input Pictures.pptx");
+        var presentation = PresentationDocument.Load("InputPictures.pptx");
         var slide = presentation.Slides[0];
 
         // Get all pictures from first slide.
@@ -89,6 +89,6 @@ class Program
             using (var fileStream = File.OpenRead("Jellyfish.jpg"))
                 picture.Fill.SetData(PictureContentType.Jpeg, fileStream);
 
-        presentation.Save("Updated Pictures.pptx");
+        presentation.Save("UpdatedPictures.pptx");
     }
 }

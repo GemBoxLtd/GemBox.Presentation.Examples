@@ -16,7 +16,7 @@
     <None Update="Graphics1.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Input Pictures.pptx">
+    <None Update="InputPictures.pptx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Jellyfish.jpg">
