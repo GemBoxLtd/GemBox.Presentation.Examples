@@ -65,7 +65,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindAndReplace", "Features\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadingTextFromHtml", "Features\Loading Text from HTML\LoadingTextFromHtml.csproj", "{A57FE18F-DFC8-49A8-A0BD-8817FCBBF729}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateFonts", "Features\Private Fonts\PrivateFonts.csproj", "{1D770DFB-73E0-47A8-B0DE-5A937C905F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fonts", "Features\Fonts\Fonts.csproj", "{1D770DFB-73E0-47A8-B0DE-5A937C905F6C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightToLeftText", "Features\Right to Left Text\RightToLeftText.csproj", "{78D475CE-F682-4028-921F-BC38B4807F6A}"
 EndProject

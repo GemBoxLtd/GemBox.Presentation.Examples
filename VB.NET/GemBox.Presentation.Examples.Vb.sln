@@ -65,7 +65,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "FindAndReplace", "Features\
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "LoadingTextFromHtml", "Features\Loading Text from HTML\LoadingTextFromHtml.vbproj", "{123955B2-5701-40C5-A6E3-C41214D7F32E}"
 EndProject
-Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "PrivateFonts", "Features\Private Fonts\PrivateFonts.vbproj", "{517EDEA3-ED66-447A-8702-92F759A2FE4F}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Fonts", "Features\Fonts\Fonts.vbproj", "{517EDEA3-ED66-447A-8702-92F759A2FE4F}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "RightToLeftText", "Features\Right to Left Text\RightToLeftText.vbproj", "{577B50EA-CC65-418E-8029-2EE30937C520}"
 EndProject

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GemBox.Presentation" Version="*" />
+    <PackageReference Include="GemBox.Presentation" Version="27.0.1101" />
   </ItemGroup>
 
   <ItemGroup>
