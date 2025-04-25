@@ -3,7 +3,6 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net8.0;net48</TargetFrameworks>
-    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Index.aspx.vb" Inherits="MediumTrust.Index" %>
+﻿<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Index.aspx.vb" Inherits="AspNet.Index" %>
 
 <!DOCTYPE html>
 <html lang="en-US">

@@ -25,7 +25,7 @@ class Program
             .OfType<Picture>()
             .First();
         using (var image = File.OpenRead("Acme.png"))
-            picture.Fill.SetData(PictureContentType.Png, image);
+            picture.Fill.SetData(image, PictureContentType.Png);
         
         // Retrieve "Content" placeholder.
         shape = slide.Content.Drawings

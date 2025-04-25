@@ -87,7 +87,7 @@ Module Program
         ' Replace pictures data with image file.
         For Each picture In pictures
             Using fileStream = File.OpenRead("Jellyfish.jpg")
-                picture.Fill.SetData(PictureContentType.Jpeg, fileStream)
+                picture.Fill.SetData(fileStream, PictureContentType.Jpeg)
             End Using
         Next
 

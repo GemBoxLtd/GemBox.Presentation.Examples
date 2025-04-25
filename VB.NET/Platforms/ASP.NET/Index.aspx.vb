@@ -11,10 +11,6 @@ Partial Public Class Index
 
         ComponentInfo.SetLicense("FREE-LIMITED-KEY")
 
-        ' By specifying a location that Is under ASP.NET application's control,
-        ' GemBox.Presentation can retrieve font data when saving to PDF, even in Medium Trust environment.
-        FontSettings.FontsBaseDirectory = Server.MapPath("Fonts/")
-
         If Not Me.Page.IsPostBack Then
 
             ' Fill grid view with some default data.

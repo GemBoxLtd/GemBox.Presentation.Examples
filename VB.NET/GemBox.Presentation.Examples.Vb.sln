@@ -89,7 +89,7 @@ Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "TableFormatting", "Formatti
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "TextBoxFormatting", "Formatting\Text Box Formatting\TextBoxFormatting.vbproj", "{CA13F429-9B1B-4ABA-948B-23101B0E82A9}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MediumTrust", "Platforms\ASP.NET\MediumTrust.vbproj", "{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AspNet", "Platforms\ASP.NET\AspNet.vbproj", "{762FB83F-EF58-4EDE-A431-23A58BEA9BEE}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "AzureFunction", "Platforms\Azure\AzureFunction.vbproj", "{6B43AD02-27F9-473E-9FA6-4B1E3BBD8D2D}"
 EndProject

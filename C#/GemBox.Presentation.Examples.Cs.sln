@@ -99,7 +99,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PptxEncryption", "Protectio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PptxModifyProtection", "Protection\PPTX Modify Protection\PptxModifyProtection.csproj", "{9AF80829-D2BF-4D2E-A1C7-3CE87BF9E198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMediumTrust", "Platforms\ASP.NET\AspNetMediumTrust.csproj", "{F9E12BF5-1607-4514-A60E-9FD7FF8080B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet", "Platforms\ASP.NET\AspNet.csproj", "{F9E12BF5-1607-4514-A60E-9FD7FF8080B4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreMvc", "Platforms\ASP.NET Core\MVC\AspNetCoreMvc.csproj", "{FF7FF392-80C4-4727-AE22-0AAF26FA1EB5}"
 EndProject

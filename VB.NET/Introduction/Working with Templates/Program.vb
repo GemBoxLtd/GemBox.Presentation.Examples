@@ -25,7 +25,7 @@ Module Program
             .OfType(Of Picture) _
             .First()
         Using image = File.OpenRead("Acme.png")
-            picture.Fill.SetData(PictureContentType.Png, image)
+            picture.Fill.SetData(image, PictureContentType.Png)
         End Using
 
         ' Retrieve "Content" placeholder.

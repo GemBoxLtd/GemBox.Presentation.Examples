@@ -87,7 +87,7 @@ class Program
         // Replace pictures data with image file.
         foreach (var picture in pictures)
             using (var fileStream = File.OpenRead("Jellyfish.jpg"))
-                picture.Fill.SetData(PictureContentType.Jpeg, fileStream);
+                picture.Fill.SetData(fileStream, PictureContentType.Jpeg);
 
         presentation.Save("UpdatedPictures.pptx");
     }

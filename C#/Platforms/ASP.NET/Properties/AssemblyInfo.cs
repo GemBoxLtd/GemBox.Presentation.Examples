@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MediumTrust")]
+[assembly: AssemblyTitle("AspNet")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GemBox Ltd.")]
-[assembly: AssemblyProduct("MediumTrust")]
+[assembly: AssemblyProduct("AspNet")]
 [assembly: AssemblyCopyright("Copyright © GemBox Ltd.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
