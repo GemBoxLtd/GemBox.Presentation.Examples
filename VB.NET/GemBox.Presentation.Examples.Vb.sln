@@ -109,6 +109,18 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfExportToImageSource", "P
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfExportToXpsDocument", "Platforms\Export PowerPoint in WPF\XpsDocument\WpfExportToXpsDocument.vbproj", "{0DA29309-80A1-4E61-9B15-2889C1A5D103}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Progress Reporting and Cancellation", "Progress Reporting and Cancellation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CancellationInConsole", "Features\Progress Reporting and Cancellation\Cancellation in Console\CancellationInConsole.vbproj", "{4A90AADA-1EE7-CA84-0185-738A4DBB8697}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CancellationInWpf", "Features\Progress Reporting and Cancellation\Cancellation in WPF\CancellationInWpf.vbproj", "{DD8E6270-16F0-4686-B4B5-23B319258511}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProgressReportingInConsole", "Features\Progress Reporting and Cancellation\Progress Reporting in Console\ProgressReportingInConsole.vbproj", "{81A0197C-4B27-2E51-6946-42D42234C441}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProgressReportingInWindowsForms", "Features\Progress Reporting and Cancellation\Progress Reporting in WindowsForms\ProgressReportingInWindowsForms.vbproj", "{F739C5F2-A529-4381-AB93-93662F64404C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProgressReportingInWpf", "Features\Progress Reporting and Cancellation\Progress Reporting in WPF\ProgressReportingInWpf.vbproj", "{5FC557FB-0756-4A27-9498-B08A31CE9D26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -303,6 +315,26 @@ Global
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A90AADA-1EE7-CA84-0185-738A4DBB8697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A90AADA-1EE7-CA84-0185-738A4DBB8697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A90AADA-1EE7-CA84-0185-738A4DBB8697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A90AADA-1EE7-CA84-0185-738A4DBB8697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8E6270-16F0-4686-B4B5-23B319258511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8E6270-16F0-4686-B4B5-23B319258511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8E6270-16F0-4686-B4B5-23B319258511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8E6270-16F0-4686-B4B5-23B319258511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A0197C-4B27-2E51-6946-42D42234C441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A0197C-4B27-2E51-6946-42D42234C441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A0197C-4B27-2E51-6946-42D42234C441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A0197C-4B27-2E51-6946-42D42234C441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F739C5F2-A529-4381-AB93-93662F64404C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F739C5F2-A529-4381-AB93-93662F64404C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F739C5F2-A529-4381-AB93-93662F64404C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F739C5F2-A529-4381-AB93-93662F64404C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC557FB-0756-4A27-9498-B08A31CE9D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC557FB-0756-4A27-9498-B08A31CE9D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC557FB-0756-4A27-9498-B08A31CE9D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC557FB-0756-4A27-9498-B08A31CE9D26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -355,6 +387,12 @@ Global
 		{1FBB6EDD-B02E-4EB9-B7EA-E102654F2E3B} = {F6826A53-6549-4DD4-AE9B-C95B3E2A9A96}
 		{69239C02-27DE-4961-87E4-711F7CABAF93} = {D15FE3C5-8D48-4E2A-9A3E-3585E5E0D2C1}
 		{0DA29309-80A1-4E61-9B15-2889C1A5D103} = {D15FE3C5-8D48-4E2A-9A3E-3585E5E0D2C1}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {7B8C8DB0-2BD6-4FA6-AAAE-9BF7B116680C}
+		{4A90AADA-1EE7-CA84-0185-738A4DBB8697} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DD8E6270-16F0-4686-B4B5-23B319258511} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{81A0197C-4B27-2E51-6946-42D42234C441} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F739C5F2-A529-4381-AB93-93662F64404C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5FC557FB-0756-4A27-9498-B08A31CE9D26} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ED4156B-CA23-4988-94CE-38BAFE1E8B91}
