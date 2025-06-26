@@ -82,6 +82,8 @@ Module Program
         ' Add new line series to the LineChart.
         lineChart.Series.Add(sheet.Cells("D1").StringValue, "Sheet1!D2:D5")
 
+        lineChart.RefreshCache()
+
         presentation.Save("Updated Chart.pptx")
     End Sub
 
