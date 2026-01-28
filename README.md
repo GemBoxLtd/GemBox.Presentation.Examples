@@ -60,6 +60,10 @@ For more GemBox.Presentation code examples and demos, please visit our [examples
 
 You can download GemBox.Presentation from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/) or from [Downloads 🛠️](https://www.gemboxsoftware.com/presentation/downloads/).
 
+## AI Coding
+
+CLI coding agents such as GitHub Copilot, Claude Code, and OpenAI Codex can write valid GemBox code [when enabled with our gembox-skill](https://www.gemboxsoftware.com/support/ai-coding).
+
 ## Resources
 
 - [Product Page](https://www.gemboxsoftware.com/presentation)
