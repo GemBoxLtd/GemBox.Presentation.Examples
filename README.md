@@ -1,5 +1,7 @@
 [![NuGet version](https://img.shields.io/nuget/v/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![NuGet downloads](https://img.shields.io/nuget/dt/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![Visual Studio Marketplace rating](https://img.shields.io/visual-studio-marketplace/stars/GemBoxSoftware.GemBoxPresentation?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=GemBoxSoftware.GemBoxPresentation)
 
+[![GemBox.Presentation .NET PowerPoint library](https://www.gemboxsoftware.com/img/banners/gembox-gbp-banner.png)](https://www.gemboxsoftware.com/presentation/examples/getting-started/101)
+
 ## What is GemBox.Presentation?
 
 GemBox.Presentation is a .NET library that enables you to read, write, convert, and print presentation files (PPTX, PPT, and PPSX) from .NET applications.
@@ -58,7 +60,7 @@ For more GemBox.Presentation code examples and demos, please visit our [examples
 
 ## Installation
 
-You can download GemBox.Presentation from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/) or from [Downloads 🛠️](https://www.gemboxsoftware.com/presentation/downloads/).
+You can download GemBox.Presentation from [NuGet 📦](https://www.nuget.org/packages/GemBox.Presentation/) or from [Downloads 🛠️](https://www.gemboxsoftware.com/presentation/free-version).
 
 ## AI Coding
 
