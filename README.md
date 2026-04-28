@@ -1,4 +1,4 @@
-[![NuGet version](https://img.shields.io/nuget/v/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![NuGet downloads](https://img.shields.io/nuget/dt/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![Visual Studio Marketplace rating](https://img.shields.io/visual-studio-marketplace/stars/GemBoxSoftware.GemBoxPresentation?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=GemBoxSoftware.GemBoxPresentation)
+[![NuGet version](https://img.shields.io/nuget/v/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/) [![NuGet downloads](https://img.shields.io/nuget/dt/GemBox.Presentation?style=for-the-badge)](https://www.nuget.org/packages/GemBox.Presentation/)
 
 [![GemBox.Presentation .NET PowerPoint library](https://www.gemboxsoftware.com/img/banners/gembox-gbp-banner.png)](https://www.gemboxsoftware.com/presentation/examples/getting-started/101)
 
