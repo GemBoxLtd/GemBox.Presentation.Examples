@@ -47,7 +47,7 @@ Partial Public Class MainWindow
 
             Dim printOptions = New PrintOptions(printDialog.PrintTicket.GetXmlStream())
 
-            printOptions.FromSlide = printDialog.PageRange.PageFrom - 1
+            printOptions.FromSlide = If(printDialog.PageRange.PageFrom = 0, 0, printDialog.PageRange.PageFrom - 1)
             printOptions.ToSlide = If(printDialog.PageRange.PageTo = 0, Int32.MaxValue, printDialog.PageRange.PageTo - 1)
 
             Me.presentation.Print(printDialog.PrintQueue.FullName, printOptions)

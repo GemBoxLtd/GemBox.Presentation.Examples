@@ -47,7 +47,7 @@ public partial class MainWindow : Window
         {
             PrintOptions printOptions = new PrintOptions(printDialog.PrintTicket.GetXmlStream());
 
-            printOptions.FromSlide = printDialog.PageRange.PageFrom - 1;
+            printOptions.FromSlide = printDialog.PageRange.PageFrom == 0 ? 0 : printDialog.PageRange.PageFrom - 1;
             printOptions.ToSlide = printDialog.PageRange.PageTo == 0 ? int.MaxValue : printDialog.PageRange.PageTo - 1;
 
             this.presentation.Print(printDialog.PrintQueue.FullName, printOptions);
